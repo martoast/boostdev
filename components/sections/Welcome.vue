@@ -2,8 +2,8 @@
   <section id="welcome">
     <SectionHeader
       header="Welcome"
-      sub-header="No Front-end Experience Required"
-      text="Find out why Vuetify is the #1 Material Library for the Vue Framework."
+      sub-header="No Coding Experience Required"
+      text="Find out why Boost Development has the right solution for your vision."
     />
 
     <v-container
@@ -11,14 +11,14 @@
       px-0
       pb-0
     >
-      <v-img
+      <!-- <v-img
         max-width="600"
         height="400"
         class="mx-auto"
         :class="$vuetify.breakpoint.mdAndUp ? 'mb-5' : ''"
         contain
         src="https://www.jing.fm/clipimg/detail/40-408123_software-development-clipart-identity-application-maintenance.png"
-      />
+      /> -->
 
       <v-row>
         <v-col
@@ -86,14 +86,14 @@ export default {
         color: "teal",
         header: "UI Kit",
         text:
-          "Built with Material Design, each component is built precisely to match the specification."
+          "Built with Material Design, each component is built to scale. Smooth interface across all screen sizes."
       },
       {
         icon: "mdi-brush",
         color: "red lighten-2",
         header: "Design",
         text:
-          "Easily built a custom designed application from the ground up, no prior experience required."
+          "Our team of experts will design the perfect UI for your application."
       },
       {
         icon: "mdi-widgets",
@@ -103,11 +103,11 @@ export default {
           "Feel confident in the life-span of your product with major version long-term support."
       },
       {
-        icon: "mdi-forum",
-        color: "green",
-        header: "Support",
+        icon: "mdi-google",
+        color: "red",
+        header: "SEO Optimized",
         text:
-          "Stuck? Take advantage of our active community full of developers just like you."
+          "Is your store or web app not getting any traffic? Optimizing for Google ranking factors is essential in the success of any online presence."
       }
     ]
   })

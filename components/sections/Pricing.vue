@@ -1,7 +1,7 @@
 <template>
   <section
     id="pricing"
-    class="px-3"
+    class="px-3 pt-6"
   >
     <SectionHeader
       header="Plans"
@@ -34,6 +34,7 @@
             >
               Yearly
             </v-btn>
+
           </v-btn-toggle>
         </v-col>
         <v-col

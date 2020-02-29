@@ -1,7 +1,7 @@
 <template>
   <section
     id="try-it"
-    class="grey lighten-3 px-3"
+    class="px-3 pt-12"
   >
     <SectionHeader
       header="Check it out"
@@ -21,7 +21,15 @@
         />
         <v-text-field
           outlined
+          label="Company"
+        />
+        <v-text-field
+          outlined
           label="Email"
+        />
+        <v-text-field
+          outlined
+          label="Phone #"
         />
         <v-btn
           color="success"

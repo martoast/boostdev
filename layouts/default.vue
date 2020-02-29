@@ -4,9 +4,13 @@
     <AppBar />
     <Hero />
     <v-content>
+
       <v-container>
+
         <nuxt />
       </v-container>
+      <Demo />
+
     </v-content>
     <v-navigation-drawer
       v-model="rightDrawer"
@@ -33,10 +37,12 @@
 <script>
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
+import Demo from "~/components/sections/Demo.vue";
 export default {
   components: {
     AppBar,
-    Hero
+    Hero,
+    Demo
   },
   data() {
     return {

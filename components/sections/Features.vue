@@ -1,7 +1,7 @@
 <template>
   <section
     id="features"
-    class="grey lighten-3 px-3"
+    class=" px-3"
   >
     <SectionHeader
       header="Features"
@@ -78,22 +78,22 @@ export default {
     features: [
       {
         src:
-          "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
+          "https://image.freepik.com/free-vector/programmer-working-computer_23-2147505689.jpg",
         header: "Easy to get started",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       },
       {
         src:
-          "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
-        header: "Easy to get help",
+          "https://apps.shopifycdn.com/listing_images/f4a2a9d2237d6f9b289e9e427f6e3d82/key_benefit/4b0a488080d377ffd4f17a7528d59e00.png?height=240&width=320",
+        header: "SEO Infrastructure",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       },
       {
         src:
           "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
-        header: "Easy to build applications",
+        header: "Scalable Applications",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       }

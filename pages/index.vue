@@ -6,8 +6,6 @@
 
     <welcome />
 
-    <demo />
-
     <features />
 
     <pricing />

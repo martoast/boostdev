@@ -2,7 +2,7 @@
   <v-img
     v-if="namespace"
     height="100vh"
-    src="https://galco.ie/wp-content/uploads/2016/08/Hot-dip-galvanizing-in-action.jpg"
+    src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg"
     class="white--text"
     gradient="to top, rgba(13, 3, 29, .85), rgba(25, 25, 38, .85)"
   >
@@ -20,11 +20,11 @@
             class="mb-4"
             :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
           >
-            Supercharge your development
+            Boost Development
           </h1>
 
           <p class="title font-weight-light">
-            Improve your workflow and productivity with the most popular Material Framework for Vue, <strong>Vuetify</strong>.
+            Briging your projects to reality using the most powerfull <strong>open source</strong> Frameworks.
           </p>
 
           <div class="py-4" />
