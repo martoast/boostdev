@@ -2,7 +2,7 @@
   <v-img
     v-if="namespace"
     height="100vh"
-    src="/static/home-jumbotron.png"
+    src="https://galco.ie/wp-content/uploads/2016/08/Hot-dip-galvanizing-in-action.jpg"
     class="white--text"
     gradient="to top, rgba(13, 3, 29, .85), rgba(25, 25, 38, .85)"
   >
@@ -66,11 +66,11 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      namespace () {
-        return this.$route.name
-      }
+export default {
+  computed: {
+    namespace() {
+      return this.$route.name;
     }
   }
+};
 </script>

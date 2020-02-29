@@ -6,12 +6,7 @@
     app
     hide-on-scroll
   >
-    <v-img
-      class="shrink"
-      contain
-      max-width="50%"
-      src="/static/alpha-software-logo.png"
-    />
+    <VuetifyLogo />
 
     <v-spacer />
 
@@ -20,6 +15,7 @@
         href="#try-it"
         text
         @click.prevent="$vuetify.goTo('#try-it')"
+        dark
       >
         Try It
       </v-btn>
@@ -30,8 +26,12 @@
 <script>
 // Utilities
 import { mapMutations } from "vuex";
+import VuetifyLogo from "~/components/VuetifyLogo.vue";
 
 export default {
+  components: {
+    VuetifyLogo
+  },
   data: () => ({
     isScrolling: false
   }),

@@ -17,7 +17,7 @@
         class="mx-auto"
         :class="$vuetify.breakpoint.mdAndUp ? 'mb-5' : ''"
         contain
-        src="/static/welcome-monitor.png"
+        src="https://www.jing.fm/clipimg/detail/40-408123_software-development-clipart-identity-application-maintenance.png"
       />
 
       <v-row>

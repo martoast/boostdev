@@ -77,19 +77,22 @@ export default {
   data: () => ({
     features: [
       {
-        src: "/static/feature-easy.png",
+        src:
+          "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
         header: "Easy to get started",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       },
       {
-        src: "/static/feature-community.png",
+        src:
+          "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
         header: "Easy to get help",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       },
       {
-        src: "/static/feature-build.png",
+        src:
+          "https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png",
         header: "Easy to build applications",
         text:
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."

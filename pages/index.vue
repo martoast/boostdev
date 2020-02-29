@@ -3,7 +3,6 @@
     id="home"
     class="pa-0"
   >
-    <hero />
 
     <welcome />
 
@@ -28,7 +27,7 @@ export default {
   components: {
     Demo: () => import("~/components/sections/Demo"),
     Features: () => import("~/components/sections/Features"),
-    Hero: () => import("~/components/sections/Hero"),
+
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),
     Welcome: () => import("~/components/sections/Welcome")
