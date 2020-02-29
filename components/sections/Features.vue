@@ -3,7 +3,7 @@
     id="features"
     class="grey lighten-3 px-3"
   >
-    <section-header
+    <SectionHeader
       header="Features"
       sub-header="The Last UI Kit You'll Ever Need"
       text="With regular updates, dedicated support and an armada of components, there is a solution to any problem."
@@ -68,25 +68,33 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      features: [
-        {
-          src: '/static/feature-easy.png',
-          header: 'Easy to get started',
-          text: 'Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor.'
-        },
-        {
-          src: '/static/feature-community.png',
-          header: 'Easy to get help',
-          text: 'Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor.'
-        },
-        {
-          src: '/static/feature-build.png',
-          header: 'Easy to build applications',
-          text: 'Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor.'
-        }
-      ]
-    })
-  }
+import SectionHeader from "~/components/SectionHeader.vue";
+
+export default {
+  components: {
+    SectionHeader
+  },
+  data: () => ({
+    features: [
+      {
+        src: "/static/feature-easy.png",
+        header: "Easy to get started",
+        text:
+          "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
+      },
+      {
+        src: "/static/feature-community.png",
+        header: "Easy to get help",
+        text:
+          "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
+      },
+      {
+        src: "/static/feature-build.png",
+        header: "Easy to build applications",
+        text:
+          "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
+      }
+    ]
+  })
+};
 </script>

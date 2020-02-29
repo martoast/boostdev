@@ -3,6 +3,11 @@
     id="try-it"
     class="grey lighten-3 px-3"
   >
+    <SectionHeader
+      header="Check it out"
+      sub-header="Get Started Today"
+      text="Sign up for free and become one of the millions of people around the world who have fallen in love with TheSaaS."
+    />
 
     <v-card
       outlined
@@ -31,3 +36,11 @@
     </v-card>
   </section>
 </template>
+<script>
+import SectionHeader from "~/components/SectionHeader.vue";
+export default {
+  components: {
+    SectionHeader
+  }
+};
+</script>

@@ -3,7 +3,7 @@
     id="pricing"
     class="px-3"
   >
-    <section-header
+    <SectionHeader
       header="Plans"
       sub-header="Pricing"
       text="Choose any of the following plans to get started with. You can begin with the FREE plan to see our web application at first. You can always change your plan at any time."
@@ -100,43 +100,39 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      frequency: 0,
-      plans: [
-        {
-          name: 'Free',
-          monthly: 0,
-          yearly: 0,
-          features: [
-            '100+ Components',
-            'Community Support',
-            'Unlimited Projects'
-          ]
-        },
-        {
-          name: 'Personal',
-          monthly: 50,
-          yearly: 199,
-          features: [
-            '100+ Components',
-            'Private Support',
-            'Unlimited Projects'
-          ]
-        },
-        {
-          name: 'Premium',
-          monthly: 250,
-          yearly: 999,
-          features: [
-            'Issue Resolution Priority',
-            'On-Demand Support',
-            'Unlimited Projects'
-          ]
-        }
-      ]
-    })
-  }
+import SectionHeader from "~/components/SectionHeader.vue";
+export default {
+  components: {
+    SectionHeader
+  },
+  data: () => ({
+    frequency: 0,
+    plans: [
+      {
+        name: "Free",
+        monthly: 0,
+        yearly: 0,
+        features: ["100+ Components", "Community Support", "Unlimited Projects"]
+      },
+      {
+        name: "Personal",
+        monthly: 50,
+        yearly: 199,
+        features: ["100+ Components", "Private Support", "Unlimited Projects"]
+      },
+      {
+        name: "Premium",
+        monthly: 250,
+        yearly: 999,
+        features: [
+          "Issue Resolution Priority",
+          "On-Demand Support",
+          "Unlimited Projects"
+        ]
+      }
+    ]
+  })
+};
 </script>
 
 <style lang="sass">
