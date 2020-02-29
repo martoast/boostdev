@@ -1,21 +1,8 @@
 <template>
   <v-app dark>
 
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <AppBar />
+    <Hero />
     <v-content>
       <v-container>
         <nuxt />
@@ -44,7 +31,13 @@
 </template>
 
 <script>
+import AppBar from "~/components/core/AppBar.vue";
+import Hero from "~/components/sections/Hero.vue";
 export default {
+  components: {
+    AppBar,
+    Hero
+  },
   data() {
     return {
       clipped: false,
