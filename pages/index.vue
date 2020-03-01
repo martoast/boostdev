@@ -6,6 +6,8 @@
 
     <welcome />
 
+    <services />
+
     <features />
 
     <pricing />
@@ -25,6 +27,7 @@ export default {
   components: {
     Demo: () => import("~/components/sections/Demo"),
     Features: () => import("~/components/sections/Features"),
+    Services: () => import("~/components/sections/Services"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),

@@ -1,7 +1,7 @@
 <template>
   <section
     id="features"
-    class=" px-3"
+    class=" px-3 pt-12"
   >
     <SectionHeader
       header="Features"
