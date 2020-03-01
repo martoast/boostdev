@@ -5,7 +5,7 @@
     <Hero />
     <v-content>
 
-      <v-container>
+      <v-container class="pb-12">
 
         <nuxt />
       </v-container>
@@ -25,6 +25,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <try-it />
     <v-footer
       :fixed="fixed"
       app
@@ -38,11 +39,13 @@
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
 import Demo from "~/components/sections/Demo.vue";
+
 export default {
   components: {
     AppBar,
     Hero,
-    Demo
+    Demo,
+    TryIt: () => import("~/components/sections/TryIt")
   },
   data() {
     return {

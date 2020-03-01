@@ -1,7 +1,7 @@
 <template>
   <section
     id="try-it"
-    class="px-3 pt-12"
+    class="px-3 pt-12 pb-12"
   >
     <SectionHeader
       header="Check it out"
@@ -11,7 +11,7 @@
 
     <v-card
       outlined
-      class="pa-4 mx-auto"
+      class="pa-4  mx-auto"
       max-width="500"
     >
       <v-form>

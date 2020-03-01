@@ -12,7 +12,7 @@
 
     <pricing />
 
-    <try-it />
+    <!-- <try-it /> -->
   </section>
 </template>
 
