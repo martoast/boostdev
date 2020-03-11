@@ -10,8 +10,6 @@
 
     <features />
 
-    <pricing />
-
     <!-- <try-it /> -->
   </section>
 </template>

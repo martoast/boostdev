@@ -16,7 +16,7 @@
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec vitae orci sed dolor rutrum auctor. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum ullamcorper mauris at ligula.
+              The meta description tag serves the function of advertising copy. It draws readers to a website from the SERP, and thus is a very visible and important part of search marketing. Crafting a readable, compelling description using important keywords can improve the click-through rate for a given webpage. To maximize click-through rates on search engine result pages, it's important to note that Google and other search engines bold keywords in the description when they match search queries. This bold text can draw the eyes of searchers, so you should match your descriptions to search terms as closely as possible.
             </p>
             <p class="mb-5">
               Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit risus. Donec vitae sapien ut libero venenatis faucibus. In hac habitasse platea dictumst. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
@@ -110,6 +110,7 @@ export default {
       title: ""
     };
   },
+  layout: "service",
 
   components: {},
 

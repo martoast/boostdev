@@ -11,7 +11,7 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Bringing world class Shopping to Tijuana<br>
+              We use the best platforms around!<br>
 
             </h2>
 
@@ -38,7 +38,7 @@
           >
             <v-card>
               <v-img
-                src="https://picsum.photos/510/300?random"
+                src="https://www.aalpha.net/wp-content/uploads/2020/03/magento-gif.gif"
                 height="500"
               >
 
@@ -58,6 +58,7 @@
             cols="12"
             md="4"
           >
+
             <v-card
               class="mx-n3"
               color="transparent"
@@ -110,13 +111,14 @@ export default {
       title: ""
     };
   },
+  layout: "ecommerce",
 
   components: {},
 
   data: () => ({
     highlights: [
-      "Architecture development",
-      "Cloud computing",
+      "UI/UX/CX for Ecommerce",
+      "Development for Ecommerce",
       "Consulting",
       "AWS maintenance",
       "Corporate training",
