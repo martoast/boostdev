@@ -1,35 +1,5 @@
 <template>
-  <v-card
-    class="mx-auto"
-    max-width="500"
-  >
-    <v-system-bar
-      color="indigo darken-2"
-      dark
-    >
-      <v-spacer></v-spacer>
-
-      <v-icon>mdi-window-minimize</v-icon>
-
-      <v-icon>mdi-window-maximize</v-icon>
-
-      <v-icon>mdi-close</v-icon>
-    </v-system-bar>
-
-    <v-toolbar
-      color="indigo"
-      dark
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Discover</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-    </v-toolbar>
+  <v-card class="mx-auto">
 
     <v-container fluid>
       <v-row dense>
@@ -38,32 +8,45 @@
           :key="card.title"
           :cols="card.flex"
         >
-          <v-card>
-            <v-img
-              :src="card.src"
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
-            >
-              <v-card-title v-text="card.title"></v-card-title>
-            </v-img>
+          <v-hover v-slot:default="{ hover }">
+            <v-card :elevation="hover ? 16 : 2">
+              <a :href="card.link">
+                <v-img
+                  :src="card.src"
+                  class="white--text align-end"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="350px"
+                  :href="card.link"
+                >
+                  <v-card-title v-text="card.title"></v-card-title>
+                  <v-expand-transition>
+                    <div
+                      v-if="hover"
+                      class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
+                      style="height: 100%;"
+                    ></div>
+                  </v-expand-transition>
+                </v-img>
+              </a>
 
-            <v-card-actions>
-              <v-spacer></v-spacer>
+              <v-card-actions>
+                <v-spacer></v-spacer>
 
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-heart</v-icon>
+                </v-btn>
 
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-bookmark</v-icon>
+                </v-btn>
 
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+                <v-btn icon>
+                  <v-icon>mdi-share-variant</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-hover>
+
         </v-col>
       </v-row>
     </v-container>
@@ -74,19 +57,34 @@ export default {
   data: () => ({
     cards: [
       {
-        title: "Pre-fab homes",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        flex: 12
+        title: "Blog post 1",
+        src:
+          "https://www.aalpha.net/wp-content/uploads/2020/03/shopify-vs-magento.jpg",
+        flex: 6,
+        link:
+          "https://www.aalpha.net/blog/know-the-difference-between-magento-and-shopify/"
       },
       {
         title: "Favorite road trips",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6
+        src:
+          "https://www.paldesk.com/wp-content/uploads/2019/08/ecommerce-guide-how-to-start-an-ecommerce-business-1024x439.png",
+        flex: 6,
+        link:
+          "https://www.paldesk.com/ecommerce-guide-introduction-how-to-start-an-ecommerce-business/"
       },
       {
         title: "Best airlines",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
+        src:
+          "https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2015/05/31143018/Qu%C3%A9-es-el-eCommerce-compressor.jpg",
+        flex: 6,
+        link: "https://marketing4ecommerce.mx/que-es-el-ecommerce/"
+      },
+      {
+        title: "Blog post 4",
+        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+        flex: 6,
+        link:
+          "https://medium.com/vue-mastery/best-practices-for-nuxt-js-seo-32399c49b2e5"
       }
     ]
   })

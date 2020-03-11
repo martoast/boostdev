@@ -102,9 +102,13 @@
         </v-row>
       </v-container>
     </section>
+    <section>
+      <Blog />
+    </section>
   </div>
 </template>
 <script>
+import Blog from "~/components/sections/Blog.vue";
 export default {
   metaInfo() {
     return {
@@ -113,7 +117,7 @@ export default {
   },
   layout: "ecommerce",
 
-  components: {},
+  components: { Blog },
 
   data: () => ({
     highlights: [
