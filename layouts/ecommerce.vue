@@ -1,52 +1,23 @@
 <template>
   <v-app dark>
-
     <AppBar />
-    <v-parallax
-      height="300"
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    >
-      <v-row
-        align="center"
-        justify="center"
-      >
-        <v-col
-          class="text-center"
-          cols="12"
-        >
-          <h1 class="display-1 font-weight-thin mb-4">EXPERTS IN ECOMMERCE AND ERP</h1>
-          <h4 class="subheading">Specialists in Online Stores that SELL</h4>
-        </v-col>
-      </v-row>
-    </v-parallax>
+    <PageHeader />
 
     <v-content>
-
       <v-container class="pb-12">
-
         <nuxt />
       </v-container>
       <Demo />
-
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
+    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-item @click.native="right = !right">
-
           <v-list-item-title>shit</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <try-it />
-    <v-footer
-      :fixed="fixed"
-      app
-    >
+    <v-footer :fixed="fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -56,13 +27,15 @@
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
 import Demo from "~/components/sections/Demo.vue";
+import PageHeader from "~/components/PageHeader.vue";
 
 export default {
   components: {
     AppBar,
     Hero,
     Demo,
-    TryIt: () => import("~/components/sections/TryIt")
+    TryIt: () => import("~/components/sections/TryIt"),
+    PageHeader
   },
   data() {
     return {
