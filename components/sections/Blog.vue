@@ -1,13 +1,8 @@
 <template>
   <v-card class="mx-auto">
-
     <v-container fluid>
       <v-row dense>
-        <v-col
-          v-for="card in cards"
-          :key="card.title"
-          :cols="card.flex"
-        >
+        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
           <v-hover v-slot:default="{ hover }">
             <v-card :elevation="hover ? 16 : 2">
               <a :href="card.link">
@@ -46,7 +41,6 @@
               </v-card-actions>
             </v-card>
           </v-hover>
-
         </v-col>
       </v-row>
     </v-container>
@@ -87,6 +81,21 @@ export default {
           "https://medium.com/vue-mastery/best-practices-for-nuxt-js-seo-32399c49b2e5"
       }
     ]
-  })
+  }),
+  jsonld() {
+    const items = this.cards.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@id": item.link,
+        name: item.title
+      }
+    }));
+    return {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: items
+    };
+  }
 };
 </script>

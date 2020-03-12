@@ -11,8 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "nuxt-jsonld": "^1.4.5"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0"
