@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="features"
-    class=" px-3 pt-12"
-  >
+  <section id="features" class=" px-3 pt-12">
     <SectionHeader
       header="Features"
       sub-header="The Last UI Kit You'll Ever Need"
@@ -21,38 +18,21 @@
         :class="[$vuetify.breakpoint.mdAndUp && 'my-5']"
         align="center"
         :style="{
-          flexDirection: $vuetify.breakpoint.mdAndUp && i === 1 ? 'row-reverse' : 'row'
+          flexDirection:
+            $vuetify.breakpoint.mdAndUp && i === 1 ? 'row-reverse' : 'row'
         }"
       >
-        <v-col
-          cols="12"
-          md="6"
-          class="hidden-sm-and-down"
-        >
-          <v-sheet
-            max-width="400"
-            class="mx-auto"
-          >
-            <v-img
-              width="100%"
-              height="300"
-              color="grey"
-              :src="feature.src"
-            />
+        <v-col cols="12" md="6" class="hidden-sm-and-down">
+          <v-sheet max-width="400" class="mx-auto">
+            <v-img width="100%" height="300" color="grey" :src="feature.src" />
           </v-sheet>
         </v-col>
-        <v-col
-          cols="12"
-          md="6"
-        >
+        <v-col cols="12" md="6">
           <h3
             class="headline font-weight-regular mb-3 mt-2"
             v-text="feature.header"
           />
-          <p
-            class="body-1 font-weight-light"
-            v-text="feature.text"
-          />
+          <p class="body-1 font-weight-light" v-text="feature.text" />
         </v-col>
         <v-col
           v-if="i !== features.length - 1"
@@ -98,6 +78,22 @@ export default {
           "Maecenas vestibulum mollis diam. Etiam feugiat lorem non metus. Fusce pharetra convallis urna. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis leo. Phasellus accumsan cursus velit. Curabitur a felis in nunc fringilla tristique. Phasellus a est. Vestibulum dapibus nunc ac augue. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor."
       }
     ]
-  })
+  }),
+  jsonld() {
+    const items = this.features.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@id": item.src,
+        name: item.header,
+        description: item.text
+      }
+    }));
+    return {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: items
+    };
+  }
 };
 </script>

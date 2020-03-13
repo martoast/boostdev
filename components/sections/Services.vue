@@ -6,22 +6,11 @@
       text="Find the right solution for you."
     />
 
-    <v-container
-      fluid
-      class="mx-auto pt-6 pb-6"
-    >
+    <v-container fluid class="mx-auto pt-6 pb-6">
       <v-row dense>
-        <v-col
-          v-for="card in cards"
-          :key="card.title"
-          :cols="card.flex"
-        >
+        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
           <v-hover v-slot:default="{ hover }">
-            <v-card
-              :to="card.route"
-              :elevation="hover ? 16 : 2"
-            >
-
+            <v-card :to="card.route" :elevation="hover ? 16 : 2">
               <v-img
                 :src="card.src"
                 class="white--text align-end"
@@ -33,22 +22,16 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
                     style="height: 100%;"
-                  >
-
-                  </div>
+                  ></div>
                 </v-expand-transition>
                 <v-card-title v-text="card.title"></v-card-title>
               </v-img>
-
             </v-card>
           </v-hover>
-
         </v-col>
       </v-row>
     </v-container>
-
   </div>
-
 </template>
 <script>
 import SectionHeader from "~/components/SectionHeader.vue";
@@ -88,6 +71,22 @@ export default {
         flex: 6
       }
     ]
-  })
+  }),
+  jsonld() {
+    const items = this.cards.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@id": item.src,
+        name: item.title,
+        url: item.src
+      }
+    }));
+    return {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: items
+    };
+  }
 };
 </script>
