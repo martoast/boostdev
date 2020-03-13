@@ -3,7 +3,10 @@
     <section>
       <v-container>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -31,13 +34,25 @@
               pellentesque eu, pretium quis, sem.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large>
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+            >
               Read More
             </v-btn>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <v-card>
-              <v-img src="https://picsum.photos/510/300?random" height="500">
+              <v-img
+                src="https://picsum.photos/510/300?random"
+                height="500"
+              >
               </v-img>
             </v-card>
           </v-col>
@@ -59,9 +74,19 @@
             md="3"
           >
             <div class="text-center">
-              <v-icon size="64" class="mb-3" v-text="icon" />
-              <div class="display-2 font-weight-bold mb-2" v-text="number" />
-              <div class="text-uppercase" v-text="name" />
+              <v-icon
+                size="64"
+                class="mb-3"
+                v-text="icon"
+              />
+              <div
+                class="display-2 font-weight-bold mb-2"
+                v-text="number"
+              />
+              <div
+                class="text-uppercase"
+                v-text="name"
+              />
             </div>
           </v-col>
         </v-row>
@@ -76,6 +101,18 @@
 import SeoFeatures from "~/components/sections/SeoFeatures.vue";
 import SeoBlog from "~/components/sections/SeoBlog.vue";
 export default {
+  head() {
+    return {
+      title: "Experts in SEO and SERPS",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Boost your website or store to the first page of Google!"
+        }
+      ]
+    };
+  },
   metaInfo() {
     return {
       title: "Boost Development SEO",

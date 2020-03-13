@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Experts in Ecommerce and Web Development.' }
+      { hid: 'description', name: 'description', content: 'Experts in Ecommerce-Web Development-SEO.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

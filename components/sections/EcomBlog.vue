@@ -1,8 +1,15 @@
 <template>
   <v-card class="hidden-sm-and-down">
-    <v-container fluid class="mx-auto">
+    <v-container
+      fluid
+      class="mx-auto"
+    >
       <v-row dense>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+        <v-col
+          v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
+        >
           <v-hover v-slot:default="{ hover }">
             <v-card :elevation="hover ? 16 : 2">
               <a :href="card.link">

@@ -3,7 +3,10 @@
     <section>
       <v-container>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -29,11 +32,20 @@
               pellentesque eu, pretium quis, sem.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large>
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+            >
               Read More
             </v-btn>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <v-card class="hidden-sm-and-down">
               <v-img
                 src="https://www.aalpha.net/wp-content/uploads/2020/03/magento-gif.gif"
@@ -60,9 +72,19 @@
             md="3"
           >
             <div class="text-center">
-              <v-icon size="64" class="mb-3" v-text="icon" />
-              <div class="display-2 font-weight-bold mb-2" v-text="number" />
-              <div class="text-uppercase" v-text="name" />
+              <v-icon
+                size="64"
+                class="mb-3"
+                v-text="icon"
+              />
+              <div
+                class="display-2 font-weight-bold mb-2"
+                v-text="number"
+              />
+              <div
+                class="text-uppercase"
+                v-text="name"
+              />
             </div>
           </v-col>
         </v-row>
@@ -77,6 +99,19 @@
 import Blog from "~/components/sections/EcomBlog.vue";
 import EcomFeatures from "~/components/sections/EcomFeatures.vue";
 export default {
+  head() {
+    return {
+      title: "Experts in Ecommerce",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "We build top quality Ecommerce stores using the best tools and frameworks."
+        }
+      ]
+    };
+  },
   metaInfo() {
     return {
       title: ""
