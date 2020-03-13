@@ -43,31 +43,27 @@ export default {
     cards: [
       {
         title: "SEO",
-        route: "spa",
-        src:
-          "https://www.milesweb.in/blog/wp-content/uploads/2017/05/seo-hosting-know-hosting-can-affect-websites-seo.png",
+        route: "seo",
+        src: require("@/assets/seoservice.png"),
         flex: 6
       },
       {
         title: "Enterprice Software",
         route: "enterprice",
-        src:
-          "https://baktmarketing.com/wp-content/uploads/2019/12/web-development-services-1024x684.jpg",
+        src: require("@/assets/enterprice.jpg"),
         flex: 6
       },
 
       {
         title: "E-commerce",
         route: "ecommerce",
-        src:
-          "https://www.acumensoftwaredesign.com/wp-content/uploads/2018/06/acumen-magento-1024x518.png",
+        src: require("@/assets/magento.png"),
         flex: 6
       },
       {
         title: "Custom Web Development",
         route: "webapp",
-        src:
-          "https://www.montanabranding.com/wp-content/uploads/2017/04/montana-custom-website-development-web-developer-agency.jpg.png",
+        src: require("@/assets/webdev.png"),
         flex: 6
       }
     ]

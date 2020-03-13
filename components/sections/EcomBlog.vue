@@ -1,6 +1,6 @@
 <template>
-  <v-card class="mx-auto">
-    <v-container fluid>
+  <v-card class="hidden-sm-and-down">
+    <v-container fluid class="mx-auto">
       <v-row dense>
         <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
           <v-hover v-slot:default="{ hover }">
@@ -23,22 +23,6 @@
                   </v-expand-transition>
                 </v-img>
               </a>
-
-              <v-card-actions>
-                <v-spacer></v-spacer>
-
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-
-                <v-btn icon>
-                  <v-icon>mdi-bookmark</v-icon>
-                </v-btn>
-
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-              </v-card-actions>
             </v-card>
           </v-hover>
         </v-col>
@@ -51,34 +35,30 @@ export default {
   data: () => ({
     cards: [
       {
-        title: "Blog post 1",
-        src:
-          "https://www.aalpha.net/wp-content/uploads/2020/03/shopify-vs-magento.jpg",
+        title: "Magento Vs. Shopify",
+        src: require("@/assets/shopify-vs-magento.jpg"),
         flex: 6,
         link:
           "https://www.aalpha.net/blog/know-the-difference-between-magento-and-shopify/"
       },
       {
-        title: "Favorite road trips",
-        src:
-          "https://www.paldesk.com/wp-content/uploads/2019/08/ecommerce-guide-how-to-start-an-ecommerce-business-1024x439.png",
+        title: "Ecommerce Intro Guide",
+        src: require("@/assets/howtostartecommerce.png"),
         flex: 6,
         link:
           "https://www.paldesk.com/ecommerce-guide-introduction-how-to-start-an-ecommerce-business/"
       },
       {
         title: "Best airlines",
-        src:
-          "https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2015/05/31143018/Qu%C3%A9-es-el-eCommerce-compressor.jpg",
+        src: require("@/assets/what-is-ecommerce.jpg"),
         flex: 6,
         link: "https://marketing4ecommerce.mx/que-es-el-ecommerce/"
       },
       {
-        title: "Blog post 4",
+        title: "25 Ecommerce Tips for 2020",
         src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
         flex: 6,
-        link:
-          "https://medium.com/vue-mastery/best-practices-for-nuxt-js-seo-32399c49b2e5"
+        link: "https://www.oberlo.com/blog/25-ecommerce-tips"
       }
     ]
   }),

@@ -34,7 +34,7 @@
             </v-btn>
           </v-col>
           <v-col cols="12" md="5" offset-md="1">
-            <v-card>
+            <v-card class="hidden-sm-and-down">
               <v-img
                 src="https://www.aalpha.net/wp-content/uploads/2020/03/magento-gif.gif"
                 height="500"
@@ -74,7 +74,7 @@
   </div>
 </template>
 <script>
-import Blog from "~/components/sections/Blog.vue";
+import Blog from "~/components/sections/EcomBlog.vue";
 import EcomFeatures from "~/components/sections/EcomFeatures.vue";
 export default {
   metaInfo() {
