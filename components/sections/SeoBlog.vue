@@ -1,58 +1,69 @@
 <template>
-  <v-card class="mx-auto">
-    <v-container fluid>
-      <v-row dense>
-        <v-col
-          v-for="card in cards"
-          :key="card.title"
-          :cols="card.flex"
-        >
-          <v-hover v-slot:default="{ hover }">
-            <v-card :elevation="hover ? 16 : 2">
-              <a :href="card.link">
-                <v-img
-                  :src="card.src"
-                  class="white--text align-end"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                  height="350px"
-                  :href="card.link"
-                >
-                  <v-card-title v-text="card.title"></v-card-title>
-                  <v-expand-transition>
-                    <div
-                      v-if="hover"
-                      class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
-                      style="height: 100%;"
-                    ></div>
-                  </v-expand-transition>
-                </v-img>
-              </a>
+  <v-lazy
+    v-model="isActive"
+    :options="{
+          threshold: .5
+        }"
+    min-height="200"
+    transition="fade-transition"
+  >
+    <v-card class="mx-auto">
+      <v-container fluid>
+        <v-row dense>
+          <v-col
+            v-for="card in cards"
+            :key="card.title"
+            :cols="card.flex"
+          >
+            <v-hover v-slot:default="{ hover }">
+              <v-card :elevation="hover ? 16 : 2">
+                <a :href="card.link">
+                  <v-img
+                    :src="card.src"
+                    class="white--text align-end"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                    height="350px"
+                    :href="card.link"
+                  >
+                    <v-card-title v-text="card.title"></v-card-title>
+                    <v-expand-transition>
+                      <div
+                        v-if="hover"
+                        class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
+                        style="height: 100%;"
+                      ></div>
+                    </v-expand-transition>
+                  </v-img>
+                </a>
 
-              <v-card-actions>
-                <v-spacer></v-spacer>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
 
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
+                  <v-btn icon>
+                    <v-icon>mdi-heart</v-icon>
+                  </v-btn>
 
-                <v-btn icon>
-                  <v-icon>mdi-bookmark</v-icon>
-                </v-btn>
+                  <v-btn icon>
+                    <v-icon>mdi-bookmark</v-icon>
+                  </v-btn>
 
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-card>
+                  <v-btn icon>
+                    <v-icon>mdi-share-variant</v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-hover>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card>
+  </v-lazy>
+
 </template>
 <script>
 export default {
   data: () => ({
+    isActive: false,
     cards: [
       {
         title: "How Nuxt solves the SEO problems",

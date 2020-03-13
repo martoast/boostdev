@@ -10,6 +10,18 @@
         <nuxt />
       </v-container>
       <Demo />
+      <v-row
+        justify="center"
+        class="pt-12"
+      ><iframe
+          class="lazyload"
+          width="800px"
+          height="400px"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe></v-row>
 
     </v-content>
     <v-navigation-drawer

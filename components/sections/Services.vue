@@ -5,32 +5,51 @@
       sub-header="Areas of focus"
       text="Find the right solution for you."
     />
-
-    <v-container fluid class="mx-auto pt-6 pb-6">
-      <v-row dense>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-hover v-slot:default="{ hover }">
-            <v-card :to="card.route" :elevation="hover ? 16 : 2">
-              <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="300px"
+    <v-lazy
+      v-model="isActive"
+      :options="{
+          threshold: .5
+        }"
+      min-height="200"
+      transition="fade-transition"
+    >
+      <v-container
+        fluid
+        class="mx-auto pt-6 pb-6"
+      >
+        <v-row dense>
+          <v-col
+            v-for="card in cards"
+            :key="card.title"
+            :cols="card.flex"
+          >
+            <v-hover v-slot:default="{ hover }">
+              <v-card
+                :to="card.route"
+                :elevation="hover ? 16 : 2"
               >
-                <v-expand-transition>
-                  <div
-                    v-if="hover"
-                    class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
-                    style="height: 100%;"
-                  ></div>
-                </v-expand-transition>
-                <v-card-title v-text="card.title"></v-card-title>
-              </v-img>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </v-row>
-    </v-container>
+                <v-img
+                  :src="card.src"
+                  class="white--text align-end"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="300px"
+                >
+                  <v-expand-transition>
+                    <div
+                      v-if="hover"
+                      class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
+                      style="height: 100%;"
+                    ></div>
+                  </v-expand-transition>
+                  <v-card-title v-text="card.title"></v-card-title>
+                </v-img>
+              </v-card>
+            </v-hover>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-lazy>
+
   </div>
 </template>
 <script>
@@ -40,6 +59,7 @@ export default {
     SectionHeader
   },
   data: () => ({
+    isActive: false,
     cards: [
       {
         title: "SEO",
