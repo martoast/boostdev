@@ -10,7 +10,8 @@
         <nuxt />
       </v-container>
       <Demo />
-      <v-row
+
+      <!-- <v-row
         justify="center"
         class="pt-12"
       ><iframe
@@ -21,7 +22,7 @@
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe></v-row>
+        ></iframe></v-row> -->
 
     </v-content>
     <v-navigation-drawer
@@ -37,7 +38,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <try-it />
+    <Contact />
     <v-footer
       :fixed="fixed"
       app
@@ -51,13 +52,15 @@
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
 import Demo from "~/components/sections/Demo.vue";
+import Contact from "~/components/sections/Contact.vue";
 
 export default {
   components: {
     AppBar,
     Hero,
     Demo,
-    TryIt: () => import("~/components/sections/TryIt")
+    TryIt: () => import("~/components/sections/TryIt"),
+    Contact
   },
   data() {
     return {

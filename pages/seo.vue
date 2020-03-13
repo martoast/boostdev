@@ -11,27 +11,14 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Bringing world class Shopping to Tijuana<br />
+              Our agency gets your brand in front of consumers.<br />
             </h2>
 
             <p class="subtitle-1">
-              The meta description tag serves the function of advertising copy.
-              It draws readers to a website from the SERP, and thus is a very
-              visible and important part of search marketing. Crafting a
-              readable, compelling description using important keywords can
-              improve the click-through rate for a given webpage. To maximize
-              click-through rates on search engine result pages, it's important
-              to note that Google and other search engines bold keywords in the
-              description when they match search queries. This bold text can
-              draw the eyes of searchers, so you should match your descriptions
-              to search terms as closely as possible.
+              At Path, we develop SEO programs that maximize your visibility. Our campaigns stand out from the crowd through savvy content development and strategic link-building efforts. We leverage insights from paid search partners (including our own colleagues) to develop data-driven organic search strategies, but we know that only actionable SEO plans actually deliver results. That’s why we also maintain close communication with our clients’ extended network of partners, to keep everyone working together towards the goal of maximum web visibility.
             </p>
             <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-              dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit
-              risus. Donec vitae sapien ut libero venenatis faucibus. In hac
-              habitasse platea dictumst. Donec quam felis, ultricies nec,
-              pellentesque eu, pretium quis, sem.
+              Great SEO is collaborative, multi-faceted, and constantly evolving. That's why we build close working relationships with all the crucial stakeholders and agency teams on the client side, from PR to social to paid media to business development, to ensure that our search engine optimization efforts are driven by smart, consistent, and realistically actionable strategies.
             </p>
 
             <v-btn
@@ -50,7 +37,7 @@
           >
             <v-card>
               <v-img
-                src="https://picsum.photos/510/300?random"
+                src="https://www.goldenservicesgroup.com/wp-content/uploads/2017/09/Google_Search_Page_Display.png"
                 height="500"
               >
               </v-img>
@@ -58,6 +45,9 @@
           </v-col>
         </v-row>
       </v-container>
+    </section>
+    <section>
+      <SeoServices />
     </section>
 
     <section>
@@ -100,6 +90,7 @@
 <script>
 import SeoFeatures from "~/components/sections/SeoFeatures.vue";
 import SeoBlog from "~/components/sections/SeoBlog.vue";
+import SeoServices from "~/components/sections/SeoServices.vue";
 export default {
   head() {
     return {
@@ -121,7 +112,7 @@ export default {
   },
   layout: "service",
 
-  components: { SeoFeatures, SeoBlog },
+  components: { SeoFeatures, SeoBlog, SeoServices },
 
   data: () => ({
     experiences: [

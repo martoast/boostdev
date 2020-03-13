@@ -2,6 +2,20 @@
   <v-app dark>
 
     <AppBar />
+    <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col
+          class="text-center"
+          cols="12"
+        >
+          <h1 class="display-1 font-weight-thin mb-4">Search Engine Optimization (SEO)</h1>
+          <h4 class="subheading">Our agency gets your brand in front of consumers.</h4>
+        </v-col>
+      </v-row>
+    </v-parallax>
     <v-parallax
       height="300"
       src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
@@ -14,8 +28,9 @@
           class="text-center"
           cols="12"
         >
-          <h1 class="display-1 font-weight-thin mb-4">SEO</h1>
-          <h4 class="subheading">Google rank your site today!</h4>
+          <h1 class="display-1 font-weight-thin mb-4">Dominate Your Vertical's Share of Voice</h1>
+          <p>Great SEO is collaborative, multi-faceted, and constantly evolving. That's why we build close working relationships with all the crucial stakeholders and agency teams on the client side, from PR to social to paid media to business development, to ensure that our search engine optimization efforts are driven by smart, consistent, and realistically actionable strategies.</p>
+
         </v-col>
       </v-row>
     </v-parallax>
@@ -42,7 +57,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <try-it />
+    <Contact />
     <v-footer
       :fixed="fixed"
       app
@@ -56,13 +71,15 @@
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
 import Demo from "~/components/sections/Demo.vue";
+import Contact from "~/components/sections/Contact.vue";
 
 export default {
   components: {
     AppBar,
     Hero,
     Demo,
-    TryIt: () => import("~/components/sections/TryIt")
+    TryIt: () => import("~/components/sections/TryIt"),
+    Contact
   },
   data() {
     return {

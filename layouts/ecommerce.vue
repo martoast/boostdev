@@ -9,15 +9,23 @@
       </v-container>
       <Demo />
     </v-content>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
+    <v-navigation-drawer
+      v-model="rightDrawer"
+      :right="right"
+      temporary
+      fixed
+    >
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-title>shit</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <try-it />
-    <v-footer :fixed="fixed" app>
+    <Contact />
+    <v-footer
+      :fixed="fixed"
+      app
+    >
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -28,6 +36,7 @@ import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
 import Demo from "~/components/sections/Demo.vue";
 import PageHeader from "~/components/PageHeader.vue";
+import Contact from "~/components/sections/Contact.vue";
 
 export default {
   components: {
@@ -35,7 +44,8 @@ export default {
     Hero,
     Demo,
     TryIt: () => import("~/components/sections/TryIt"),
-    PageHeader
+    PageHeader,
+    Contact
   },
   data() {
     return {
