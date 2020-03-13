@@ -2,7 +2,11 @@
   <v-card class="mx-auto">
     <v-container fluid>
       <v-row dense>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+        <v-col
+          v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
+        >
           <v-hover v-slot:default="{ hover }">
             <v-card :elevation="hover ? 16 : 2">
               <a :href="card.link">
@@ -83,16 +87,28 @@ export default {
   }),
   jsonld() {
     const items = this.cards.map((item, index) => ({
-      "@type": "ListItem",
+      "@type": "Article",
       position: index + 1,
       item: {
         "@id": item.link,
-        name: item.title
+        headline: item.title,
+        alternativeHeadline: "SEO Experts",
+        genre: "seo",
+        keywords: "seo sales b2b ecommerce shopify magento development coding",
+        wordcount: "1120",
+        url: item.link,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "https://google.com/article"
+        },
+        description: "We love to do stuff to help people and stuff",
+        articleBody:
+          "You can paste your entire post in here, and yes it can get really really long."
       }
     }));
     return {
       "@context": "http://schema.org",
-      "@type": "BreadcrumbList",
+      "@type": "Article",
       itemListElement: items
     };
   }

@@ -71,16 +71,28 @@ export default {
   }),
   jsonld() {
     const items = this.cards.map((item, index) => ({
-      "@type": "ListItem",
+      "@type": "Article",
       position: index + 1,
       item: {
         "@id": item.link,
-        name: item.title
+        headline: item.title,
+        alternativeHeadline: "Ecommerce Experts",
+        genre: "Ecommerce",
+        keywords: "seo sales b2b ecommerce shopify magento",
+        wordcount: "1120",
+        url: item.link,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "https://google.com/article"
+        },
+        description: "We love to do stuff to help people and stuff",
+        articleBody:
+          "You can paste your entire post in here, and yes it can get really really long."
       }
     }));
     return {
       "@context": "http://schema.org",
-      "@type": "BreadcrumbList",
+      "@type": "Article",
       itemListElement: items
     };
   }
