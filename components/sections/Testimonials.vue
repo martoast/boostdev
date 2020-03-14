@@ -1,47 +1,31 @@
 <template>
   <div>
+    <SectionHeader
+      header="Testimonials"
+      sub-header="Read what some of our clients has to say!"
+      text="Boost is trusted by clients internationaly."
+    />
+    <v-row>
+      <v-col
+        v-for="(testimonial, i) in testimonials"
+        :key="i"
+        cols="12"
+        md="6"
+      >
 
-    <section
-      id="home"
-      class="pa-0"
-    >
-
-      <welcome />
-
-      <services />
-
-      <features />
-
-      <Testimonials />
-
-      <!-- <try-it /> -->
-    </section>
+        <testimonial :testimonial="testimonial" />
+      </v-col>
+    </v-row>
 
   </div>
-
 </template>
-
 <script>
 export default {
-  metaInfo() {
-    return {
-      title: ""
-    };
-  },
-
   components: {
-    Demo: () => import("~/components/sections/Demo"),
-    Features: () => import("~/components/sections/Features"),
-    Services: () => import("~/components/sections/Services"),
-    Testimonials: () => import("@/components/sections/Testimonials"),
-
-    Pricing: () => import("~/components/sections/Pricing"),
-    TryIt: () => import("~/components/sections/TryIt"),
-    Welcome: () => import("~/components/sections/Welcome")
+    Testimonial: () => import("@/components/Testimonial"),
+    SectionHeader: () => import("@/components/SectionHeader")
   },
-
   data: () => ({
-    items: ["/static/server-parallax.png"],
     testimonials: [
       {
         blurb:
@@ -56,15 +40,6 @@ export default {
         title: "Mayor, Boca Raton"
       }
     ]
-  }),
-
-  computed: {
-    cardFeatures() {
-      return [];
-    },
-    listFeatures() {
-      return [];
-    }
-  }
+  })
 };
 </script>
