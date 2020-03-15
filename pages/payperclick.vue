@@ -11,15 +11,15 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Bringing world class Shopping to Tijuana<br>
+              Start Generating More Leads Today!<br>
 
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec vitae orci sed dolor rutrum auctor. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum ullamcorper mauris at ligula.
+              Pay per click advertising can be intimidating at first, but PPC marketing is an incredible way to attract traffic, leads and sales. PPC can put you in front of audiences who are actively trying to find products and services just like yours, as well as audiences who had no idea that products like yours existed.
             </p>
             <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit risus. Donec vitae sapien ut libero venenatis faucibus. In hac habitasse platea dictumst. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              Pay-per-click (PPC) is an online marketing method to drive traffic to websites where advertisers pay publishers such as Google, Yahoo!, Facebook when the ad is clicked by users.
             </p>
 
             <v-btn
@@ -27,8 +27,9 @@
               color="primary"
               class="px-5"
               large
+              to="/contact"
             >
-              Read More
+              Contact Us
             </v-btn>
           </v-col>
           <v-col
@@ -101,9 +102,13 @@
         </v-row>
       </v-container>
     </section>
+    <section>
+      <PPCBlog />
+    </section>
   </div>
 </template>
 <script>
+import PPCBlog from "~/components/sections/PPCBlog";
 export default {
   layout: "ppcLayout",
 
@@ -113,7 +118,7 @@ export default {
     };
   },
 
-  components: {},
+  components: { PPCBlog },
 
   data: () => ({
     highlights: [
