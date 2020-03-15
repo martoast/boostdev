@@ -1,50 +1,8 @@
 <template>
   <div>
+
     <section>
-      <v-container>
-        <v-row>
-          <v-col
-            cols="12"
-            md="6"
-          >
-            <h2
-              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
-              class="mb-4"
-            >
-              Quality Designs with Lighting Performance<br>
-
-            </h2>
-
-            <p class="subtitle-1">
-              We design websites, digital campaigns and social media presences that command attention, inspire engagement and serve the needs of all your visitors. We build digital creative assets that work as seamless extensions of your brand, providing users with an optimal experience across multiple devices that keeps them on your website and drives them to convert.
-            </p>
-
-            <v-btn
-              outlined
-              color="primary"
-              class="px-5"
-              large
-              to="/contact"
-            >
-              Contact Us
-            </v-btn>
-          </v-col>
-          <v-col
-            cols="12"
-            md="5"
-            offset-md="1"
-          >
-            <v-card>
-              <v-img
-                src="https://picsum.photos/510/300?random"
-                height="500"
-              >
-
-              </v-img>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+      <WebDevSamples />
     </section>
 
     <section>
@@ -102,6 +60,7 @@
   </div>
 </template>
 <script>
+import WebDevSamples from "~/components/sections/WebDevSamples";
 export default {
   layout: "webdevLayout",
   metaInfo() {
@@ -110,7 +69,7 @@ export default {
     };
   },
 
-  components: {},
+  components: { WebDevSamples },
 
   data: () => ({
     highlights: [

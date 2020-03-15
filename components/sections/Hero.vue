@@ -37,11 +37,11 @@
             <v-btn
               class="mr-md-3 my-2"
               color="white"
-              href="#pricing"
               large
               min-width="175"
               outlined
               rounded
+              to="/about/"
             >
               Learn More
             </v-btn>

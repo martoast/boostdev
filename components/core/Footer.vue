@@ -21,7 +21,6 @@
           >
             <a
               class="transition-swing"
-              href="#"
               v-text="c"
             />
           </li>
@@ -42,7 +41,6 @@
             <v-btn
               text
               v-text="category"
-              :to="category"
             ></v-btn>
 
           </v-col>

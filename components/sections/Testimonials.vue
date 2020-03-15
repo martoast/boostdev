@@ -2,7 +2,7 @@
   <div>
     <SectionHeader
       header="Testimonials"
-      sub-header="Read what some of our clients has to say!"
+      sub-header="Read what some of our clients had to say!"
       text="Boost is trusted by clients internationaly."
     />
     <v-row>

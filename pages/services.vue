@@ -32,6 +32,7 @@
                   class="white--text align-end"
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="300px"
+                  aspect-ratio="1.4"
                 >
                   <v-expand-transition>
                     <div
