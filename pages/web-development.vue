@@ -4,6 +4,21 @@
     <section>
       <WebDevSamples />
     </section>
+    <section>
+      <v-container pt-9>
+        <div>
+          <iframe
+            allowfullscreen="true"
+            title="panorama"
+            scrolling="no"
+            width="100%"
+            height="700"
+            src="https://kuula.co/share/7lcgK/collection/7fyMs"
+            style="border: 0px;"
+          ></iframe>
+        </div>
+      </v-container>
+    </section>
 
     <section>
       <v-container>

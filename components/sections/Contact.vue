@@ -3,11 +3,7 @@
     id="contact"
     class="py-5"
   >
-    <SectionHeader
-      header="Features"
-      sub-header="The Last UI Kit You'll Ever Need"
-      text="With regular updates, dedicated support and an armada of components, there is a solution to any problem."
-    />
+    <SectionHeader header="Contact Us" />
 
     <v-container>
       <v-row>

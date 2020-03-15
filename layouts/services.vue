@@ -25,7 +25,7 @@
       <v-container class="pb-12">
         <nuxt />
       </v-container>
-      <Demo />
+      <!-- <Demo /> -->
     </v-content>
 
     <Contact />
