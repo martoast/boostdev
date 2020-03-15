@@ -1,10 +1,6 @@
 <template>
   <div>
-    <SectionHeader
-      header="Services"
-      sub-header="Areas of focus"
-      text="Find the right solution for you."
-    />
+    <SectionHeader header="Boost Team" />
     <TeamItemGroup />
   </div>
 </template>

@@ -54,25 +54,25 @@ export default {
       },
       {
         name: "Alex Martos",
-        src: "https://cdn.vuetifyjs.com/images/john.jpg",
+        src: "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
         position: "CEO and BOSS man",
         content: ""
       },
       {
-        name: "Alex Martos",
-        src: "https://cdn.vuetifyjs.com/images/john.jpg",
+        name: "John Leider",
+        src: "https://randomuser.me/api/portraits/men/85.jpg",
         position: "CEO and BOSS man",
         content: ""
       },
       {
-        name: "Alex Martos",
-        src: "https://cdn.vuetifyjs.com/images/john.jpg",
+        name: "Jane Smith",
+        src: "https://randomuser.me/api/portraits/women/81.jpg",
         position: "CEO and BOSS man",
         content: ""
       },
       {
-        name: "Alex Martos",
-        src: "https://cdn.vuetifyjs.com/images/john.jpg",
+        name: "Sandra Adams",
+        src: "https://randomuser.me/api/portraits/women/85.jpg",
         position: "CEO and BOSS man",
         content: ""
       },
