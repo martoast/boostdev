@@ -3,6 +3,7 @@
 
     <AppBar />
     <Hero />
+    <DemoContact />
     <v-content>
 
       <v-container class="pb-12">
@@ -10,8 +11,9 @@
         <nuxt />
       </v-container>
       <div class="mb-12">
-        <Demo />
+
       </div>
+      <DemoContact />
 
       <Testimonials />
 
@@ -32,6 +34,7 @@ export default {
     AppBar,
     Hero,
     Demo,
+    DemoContact: () => import("~/components/sections/DemoContact"),
     Testimonials: () => import("~/components/sections/Testimonials"),
     Footer: () => import("~/components/core/Footer"),
     Contact

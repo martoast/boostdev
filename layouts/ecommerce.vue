@@ -27,7 +27,7 @@
       <v-container class="pb-12">
         <nuxt />
       </v-container>
-      <Demo />
+      <DemoContact />
     </v-content>
 
     <Contact />
@@ -38,7 +38,7 @@
 <script>
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
-import Demo from "~/components/sections/Demo.vue";
+import DemoContact from "~/components/sections/DemoContact.vue";
 import PageHeader from "~/components/PageHeader.vue";
 import Contact from "~/components/sections/Contact.vue";
 
@@ -46,7 +46,7 @@ export default {
   components: {
     AppBar,
     Hero,
-    Demo,
+    DemoContact,
     Footer: () => import("~/components/core/Footer"),
     PageHeader,
     Contact
