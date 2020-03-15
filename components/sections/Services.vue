@@ -82,7 +82,7 @@ export default {
       },
       {
         title: "Custom Web Development",
-        route: "webapp",
+        route: "web-development",
         src: require("@/assets/webdev.png"),
         flex: 6
       }

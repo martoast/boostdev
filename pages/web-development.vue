@@ -11,15 +11,12 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Bringing world class Shopping to Tijuana<br>
+              Quality Designs with Lighting Performance<br>
 
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec vitae orci sed dolor rutrum auctor. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum ullamcorper mauris at ligula.
-            </p>
-            <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit risus. Donec vitae sapien ut libero venenatis faucibus. In hac habitasse platea dictumst. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              We design websites, digital campaigns and social media presences that command attention, inspire engagement and serve the needs of all your visitors. We build digital creative assets that work as seamless extensions of your brand, providing users with an optimal experience across multiple devices that keeps them on your website and drives them to convert.
             </p>
 
             <v-btn
@@ -27,8 +24,9 @@
               color="primary"
               class="px-5"
               large
+              to="/contact"
             >
-              Read More
+              Contact Us
             </v-btn>
           </v-col>
           <v-col
@@ -105,6 +103,7 @@
 </template>
 <script>
 export default {
+  layout: "webdevLayout",
   metaInfo() {
     return {
       title: ""

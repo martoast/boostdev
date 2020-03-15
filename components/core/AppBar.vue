@@ -4,7 +4,6 @@
     :color="!isScrolling ? 'transparent' : 'rgba(13, 3, 29, .95)'"
     :flat="!isScrolling"
     app
-    hide-on-scroll
   >
     <VuetifyLogo />
 
