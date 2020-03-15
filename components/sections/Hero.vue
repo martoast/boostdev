@@ -20,11 +20,11 @@
             class="mb-4"
             :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
           >
-            Boost Development
+            Boost Media Inc
           </h1>
 
           <p class="title font-weight-light">
-            Briging your projects to reality using the most powerfull <strong>open source</strong> Frameworks.
+            <strong>Data Driven, Results Oriented Digital Marketing.</strong>
           </p>
 
           <div class="py-4" />
