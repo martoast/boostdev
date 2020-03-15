@@ -1,5 +1,5 @@
 <template>
-  <div class="v-testimonial">
+  <div class="v-testimonial mb-12 pt-3">
     <v-row class="mb-4">
       <v-col class="hidden-sm-and-down shrink">
         <v-icon

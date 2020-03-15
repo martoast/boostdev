@@ -1,13 +1,14 @@
 <template>
-  <v-lazy
-    v-model="isActive"
-    :options="{
+  <div>
+
+    <v-lazy
+      v-model="isActive"
+      :options="{
           threshold: .5
         }"
-    min-height="200"
-    transition="fade-transition"
-  >
-    <v-card class="hidden-sm-and-down">
+      min-height="200"
+      transition="fade-transition"
+    >
       <v-container
         fluid
         class="mx-auto"
@@ -19,32 +20,49 @@
             :cols="card.flex"
           >
             <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 16 : 2">
-                <a :href="card.link">
+              <a :href="card.link">
+                <v-card
+                  class="mx-auto"
+                  max-width="400"
+                  :elevation="hover ? 16 : 2"
+                >
                   <v-img
-                    :src="card.src"
                     class="white--text align-end"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="350px"
-                    :href="card.link"
+                    height="200px"
+                    :src="card.src"
                   >
                     <v-card-title v-text="card.title"></v-card-title>
-                    <v-expand-transition>
-                      <div
-                        v-if="hover"
-                        class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
-                        style="height: 100%;"
-                      ></div>
-                    </v-expand-transition>
                   </v-img>
-                </a>
-              </v-card>
+
+                  <v-card-subtitle
+                    class="pb-0"
+                    v-text="card.author"
+                  ></v-card-subtitle>
+
+                  <v-card-text class="text--primary">
+                    <div>{{card.content}}</div>
+
+                  </v-card-text>
+
+                  <v-card-actions>
+
+                    <v-btn
+                      color="orange"
+                      text
+                    >
+                      Read More
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </a>
+
             </v-hover>
+
           </v-col>
         </v-row>
       </v-container>
-    </v-card>
-  </v-lazy>
+    </v-lazy>
+  </div>
 
 </template>
 <script>
@@ -54,26 +72,39 @@ export default {
     cards: [
       {
         title: "Magento Vs. Shopify",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src: require("@/assets/shopify-vs-magento.jpg"),
         flex: 6,
         link:
           "https://www.aalpha.net/blog/know-the-difference-between-magento-and-shopify/"
       },
       {
-        title: "Ecommerce Intro Guide",
+        title:
+          "Ecommerce Guide – Introduction & How to Start an Ecommerce Business?",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "Let’s walk down the e-commerce memory lane to get a full understanding of online shopping.  Learn how to improve your eCommerce business with the help of the eCommerce guide... ",
         src: require("@/assets/howtostartecommerce.png"),
         flex: 6,
         link:
           "https://www.paldesk.com/ecommerce-guide-introduction-how-to-start-an-ecommerce-business/"
       },
       {
-        title: "Best airlines",
+        title: "Qué es el eCommerce: definición modelos y ventajas",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "hablamos del eCommerce constantemente. Pero ¿qué implica? ¿Cuáles son sus variantes? ¿Qué tecnologías son necesarias para el eCommerce?",
         src: require("@/assets/what-is-ecommerce.jpg"),
         flex: 6,
         link: "https://marketing4ecommerce.mx/que-es-el-ecommerce/"
       },
       {
         title: "25 Ecommerce Tips for 2020",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
         flex: 6,
         link: "https://www.oberlo.com/blog/25-ecommerce-tips"

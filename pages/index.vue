@@ -12,8 +12,6 @@
 
       <features />
 
-      <Testimonials />
-
       <!-- <try-it /> -->
     </section>
 

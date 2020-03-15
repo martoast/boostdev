@@ -9,42 +9,15 @@
 
         <nuxt />
       </v-container>
-      <Demo />
+      <div class="mb-12">
+        <Demo />
+      </div>
 
-      <!-- <v-row
-        justify="center"
-        class="pt-12"
-      ><iframe
-          class="lazyload"
-          width="800px"
-          height="400px"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe></v-row> -->
+      <Testimonials />
 
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
 
-          <v-list-item-title>shit</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <Contact />
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 
@@ -59,7 +32,8 @@ export default {
     AppBar,
     Hero,
     Demo,
-    TryIt: () => import("~/components/sections/TryIt"),
+    Testimonials: () => import("~/components/sections/Testimonials"),
+    Footer: () => import("~/components/core/Footer"),
     Contact
   },
   data() {
