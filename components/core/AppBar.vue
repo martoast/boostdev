@@ -14,10 +14,10 @@
       <v-btn
         href="#try-it"
         text
-        @click.prevent="$vuetify.goTo('#try-it')"
+        to="/contact"
         dark
       >
-        Try It
+        Contact Us
       </v-btn>
     </v-toolbar-items>
   </v-app-bar>

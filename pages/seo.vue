@@ -35,7 +35,7 @@
             md="5"
             offset-md="1"
           >
-            <v-card>
+            <v-card class="hidden-sm-and-down">
               <v-img
                 src="https://www.goldenservicesgroup.com/wp-content/uploads/2017/09/Google_Search_Page_Display.png"
                 height="500"

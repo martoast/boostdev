@@ -34,8 +34,9 @@
                     height="200px"
                     :src="card.src"
                   >
-                    <v-card-title v-text="card.title"></v-card-title>
+
                   </v-img>
+                  <v-card-title v-text="card.title"></v-card-title>
 
                   <v-card-subtitle
                     class="pb-0"

@@ -12,7 +12,9 @@
           cols="12"
         >
           <h1 class="display-1 font-weight-thin mb-4">Search Engine Optimization (SEO)</h1>
-          <h4 class="subheading">Our agency gets your brand in front of consumers.</h4>
+          <h4 class="subheading">Our agency gets your brand in front of consumers with
+            comprehensive, holistic SEO services - including website optimization,
+            content strategy, and web presence management.</h4>
         </v-col>
       </v-row>
     </v-parallax>

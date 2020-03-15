@@ -3,9 +3,8 @@
 
     <AppBar />
 
-    <PageHeader />
     <v-parallax
-      height="300"
+      height="200"
       src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
     >
       <v-row
@@ -16,8 +15,7 @@
           class="text-center"
           cols="12"
         >
-          <h1 class="display-1 font-weight-thin mb-4">Dominate Your Vertical's Share of Voice</h1>
-          <p>Great SEO is collaborative, multi-faceted, and constantly evolving. That's why we build close working relationships with all the crucial stakeholders and agency teams on the client side, from PR to social to paid media to business development, to ensure that our search engine optimization efforts are driven by smart, consistent, and realistically actionable strategies.</p>
+          <h1 class="display-1 font-weight-thin mb-4">Services</h1>
 
         </v-col>
       </v-row>
@@ -37,19 +35,11 @@
 
 <script>
 import AppBar from "~/components/core/AppBar.vue";
-import Hero from "~/components/sections/Hero.vue";
-import Demo from "~/components/sections/Demo.vue";
-import PageHeader from "~/components/PageHeader.vue";
-import Contact from "~/components/sections/Contact.vue";
 
 export default {
   components: {
     AppBar,
-    Hero,
-    Demo,
-    Footer: () => import("~/components/core/Footer"),
-    PageHeader,
-    Contact
+    Footer: () => import("~/components/core/Footer")
   },
   data() {
     return {

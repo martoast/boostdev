@@ -68,8 +68,8 @@ export default {
         flex: 6
       },
       {
-        title: "Enterprice Software",
-        route: "enterprice",
+        title: "Pay per Click",
+        route: "payperclick",
         src: require("@/assets/enterprice.jpg"),
         flex: 6
       },

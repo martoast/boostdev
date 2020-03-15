@@ -178,36 +178,9 @@ export default {
       ]
     };
   },
-  metaInfo: {
-    title: "Contact",
-    meta: [
-      {
-        name: "description",
-        content: "Customized vue-cli templates for Vue and Vuetify"
-      }
-    ]
-  },
 
   components: {
     SectionHeader
-  },
-  jsonld() {
-    return {
-      "@context": "http://schema.org",
-      "@type": "Coporation",
-      LegalName: "Boost Media inc",
-      description: "Experts in Ecommerce Stores that SELL!",
-      url: "https://www.boostmediainc.com",
-      logo: "LOGO URL HERE",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "900 Linton Blvd Suite 104",
-        addressLocality: "Delray Beach",
-        addressRegion: "FL",
-        postalCode: "33444",
-        addressCountry: "USA"
-      }
-    };
   }
 };
 </script>

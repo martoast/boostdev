@@ -54,9 +54,9 @@
               large
               min-width="175"
               rounded
-              @click.prevent="$vuetify.goTo('#try-it')"
+              to="/services"
             >
-              Sign up
+              Explore Our Services
             </v-btn>
           </v-row>
         </v-sheet>
