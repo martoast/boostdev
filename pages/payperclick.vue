@@ -36,14 +36,14 @@
             md="5"
             offset-md="1"
           >
-            <v-card>
-              <v-img
-                src="https://picsum.photos/510/300?random"
-                height="500"
-              >
 
-              </v-img>
-            </v-card>
+            <v-img
+              :src='require("@/assets/PPC-Pay-Per-Click.png")'
+              height="500"
+            >
+
+            </v-img>
+
           </v-col>
         </v-row>
       </v-container>
@@ -105,6 +105,8 @@
 </template>
 <script>
 export default {
+  layout: "ppcLayout",
+
   metaInfo() {
     return {
       title: ""
