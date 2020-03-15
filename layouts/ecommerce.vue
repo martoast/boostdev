@@ -22,12 +22,7 @@
       </v-list>
     </v-navigation-drawer>
     <Contact />
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 
@@ -43,7 +38,7 @@ export default {
     AppBar,
     Hero,
     Demo,
-    TryIt: () => import("~/components/sections/TryIt"),
+    Footer: () => import("~/components/core/Footer"),
     PageHeader,
     Contact
   },

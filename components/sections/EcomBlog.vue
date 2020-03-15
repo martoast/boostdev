@@ -1,5 +1,9 @@
 <template>
   <div>
+    <SectionHeader
+      header="Find out the latest News!"
+      sub-header="Latest in Ecommerce"
+    />
 
     <v-lazy
       v-model="isActive"
@@ -23,7 +27,6 @@
               <a :href="card.link">
                 <v-card
                   class="mx-auto"
-                  max-width="400"
                   :elevation="hover ? 16 : 2"
                 >
                   <v-img
@@ -67,6 +70,9 @@
 </template>
 <script>
 export default {
+  components: {
+    SectionHeader: () => import("~/components/SectionHeader")
+  },
   data: () => ({
     isActive: false,
     cards: [
