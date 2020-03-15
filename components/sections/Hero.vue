@@ -42,7 +42,6 @@
               min-width="175"
               outlined
               rounded
-              @click.prevent="$vuetify.goTo('#pricing')"
             >
               Learn More
             </v-btn>
