@@ -11,7 +11,7 @@
         md="3"
       >
         <h3 class="headline mb-3">
-          North American Galvanizing Industries
+          Boost Media Inc
         </h3>
         <ul class="body-1 pl-0">
           <li
@@ -55,7 +55,7 @@
         class="text-center blue-grey darken-4 pa-3"
         cols="12"
       >
-        &copy; 2020 North American Galvanizing Industries — All Rights reserved.
+        &copy; 2020 Boost Media Inc — All Rights reserved.
       </v-col>
     </v-row>
   </v-footer>
