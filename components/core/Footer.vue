@@ -21,7 +21,8 @@
           >
             <a
               class="transition-swing"
-              v-text="c"
+              v-text="c.title"
+              :href="c.link"
             />
           </li>
         </ul>
@@ -38,9 +39,11 @@
             cols="12"
             md="6"
           >
+
             <v-btn
               text
-              v-text="category"
+              v-text="category.title"
+              :to="category.link"
             ></v-btn>
 
           </v-col>
@@ -63,16 +66,15 @@
 export default {
   data: () => ({
     categories: [
-      "Success Stories",
-      "Case Studies",
-      "Testimonials",
-      "Press Room",
-      "Partners",
-      "JBM Construction",
-      "Macarthy Equipment",
-      "Elite Construction Management"
+      { title: "Success Stories", link: "/stories" },
+      { title: "Case Studies", link: "/case-studies" },
+      { title: "Testimonials", link: "/testimonials" }
     ],
-    company: ["Services", "Projects", "Our Team", "Commitment to the Community"]
+    company: [
+      { title: "Services", link: "/services" },
+      { title: "Projects", link: "/projects" },
+      { title: "Our Team", link: "/about/team" }
+    ]
   })
 };
 </script>
