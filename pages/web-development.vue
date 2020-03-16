@@ -4,7 +4,11 @@
     <section>
       <WebDevSamples />
     </section>
-    <section>
+    <section class="pt-12">
+      <SectionHeader
+        header="Example Work"
+        sub-header="360 Renders"
+      />
       <v-container pt-9>
         <div>
           <iframe
@@ -72,10 +76,15 @@
         </v-row>
       </v-container>
     </section>
+    <section>
+      <WebDevBlog />
+    </section>
   </div>
 </template>
 <script>
 import WebDevSamples from "~/components/sections/WebDevSamples";
+import WebDevBlog from "~/components/sections/WebDevBlog";
+import SectionHeader from "~/components/SectionHeader";
 export default {
   layout: "webdevLayout",
   metaInfo() {
@@ -84,7 +93,7 @@ export default {
     };
   },
 
-  components: { WebDevSamples },
+  components: { WebDevSamples, WebDevBlog, SectionHeader },
 
   data: () => ({
     highlights: [

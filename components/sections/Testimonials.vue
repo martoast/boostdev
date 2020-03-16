@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-12">
     <SectionHeader
       header="Testimonials"
       sub-header="Read what some of our clients had to say!"

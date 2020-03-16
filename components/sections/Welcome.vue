@@ -2,8 +2,8 @@
   <section id="welcome">
     <SectionHeader
       header="Welcome"
-      sub-header="No Coding Experience Required"
-      text="Find out why Boost Development has the right solution for your vision."
+      sub-header="Boost Your Sales Using The Latest In Digital Marketing"
+      text="See why Boost has the right solution for you!"
     />
 
     <v-container

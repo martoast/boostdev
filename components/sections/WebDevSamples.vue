@@ -2,18 +2,32 @@
   <div>
     <SectionHeader
       header="Example Pages"
-      sub-header="Some of our Work"
+      sub-header="Sample Landing Pages"
     />
-    <v-carousel
-      :show-arrows="false"
-      max-height="800px"
-    >
-      <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-      ></v-carousel-item>
-    </v-carousel>
+    <v-card class="mx-auto">
+
+      <v-container fluid>
+        <v-row dense>
+          <v-col
+            v-for="card in items"
+            :key="card.title"
+            cols=6
+          >
+            <v-card>
+              <v-img
+                :src="card.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                max-height="600px"
+              >
+                <v-card-title v-text="card.title"></v-card-title>
+              </v-img>
+
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card>
 
   </div>
 
@@ -32,10 +46,16 @@ export default {
           src: require("~/assets/ecommercestore.png")
         },
         {
-          src: require("~/assets/store2.png")
+          src: require("~/assets/eazypos.png")
         },
         {
-          src: require("~/assets/webdev.png")
+          src: require("~/assets/ferrominio.png")
+        },
+        {
+          src: require("~/assets/construction.png")
+        },
+        {
+          src: require("~/assets/delacosta.png")
         }
       ]
     };

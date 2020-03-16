@@ -2,7 +2,7 @@
   <v-app dark>
 
     <AppBar />
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+    <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
       <v-row
         align="center"
         justify="center"
