@@ -1,25 +1,49 @@
 <template>
-  <v-app-bar
-    v-scroll="onScroll"
-    :color="!isScrolling ? 'transparent' : 'rgba(13, 3, 29, .95)'"
-    :flat="!isScrolling"
-    app
-  >
-    <VuetifyLogo />
+  <div>
+    <v-app-bar
+      v-scroll="onScroll"
+      :color="!isScrolling ? 'transparent' : 'rgba(13, 3, 29, .95)'"
+      :flat="!isScrolling"
+      app
+    >
+      <VuetifyLogo />
 
-    <v-spacer />
-
-    <v-toolbar-items>
-      <v-btn
-        href="#try-it"
-        text
-        to="/contact"
-        dark
-      >
-        Contact Us
-      </v-btn>
-    </v-toolbar-items>
-  </v-app-bar>
+      <v-spacer />
+      <div class="hidden-md-and-up">
+        <v-toolbar-items>
+          <v-btn to="/contact" dark color="success" class="mr-12">
+            Contact Us
+          </v-btn>
+          <v-icon @click.stop="drawer = !drawer" dark>mdi-menu</v-icon>
+        </v-toolbar-items>
+      </div>
+      <div class="hidden-sm-and-down">
+        <v-toolbar-items>
+          <v-btn
+            v-for="(item, i) in items"
+            :key="i"
+            :active-class="!isScrolling ? 'primary--text' : undefined"
+            :to="item.to"
+            text
+            dark
+          >
+            <span v-text="item.text" />
+          </v-btn>
+        </v-toolbar-items>
+      </div>
+    </v-app-bar>
+    <div>
+      <v-navigation-drawer v-model="drawer" :right="right" temporary fixed>
+        <v-list>
+          <v-list-item v-for="item in Menuitems" :key="item.title" link>
+            <v-list-item-content>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -32,8 +56,43 @@ export default {
     VuetifyLogo
   },
   data: () => ({
-    isScrolling: false
+    isScrolling: false,
+
+    clipped: false,
+    drawer: false,
+    fixed: false,
+    miniVariant: false,
+    right: true,
+    rightDrawer: false,
+    title: "Vuetify.js",
+    Menuitems: [
+      { title: "Services", icon: "dashboard" },
+      { title: "Projects", icon: "account_box" },
+      { title: "Contact", icon: "gavel" }
+    ]
   }),
+  computed: {
+    items() {
+      return [
+        {
+          to: "/",
+          text: "Home"
+        },
+        {
+          to: "/services",
+          text: "Services"
+        },
+        {
+          to: "/projects",
+          text: "Projects"
+        },
+        {
+          to: "/contact",
+          text: "Contact"
+        }
+      ];
+    }
+  },
 
   methods: {
     ...mapMutations(["toggleDrawer"]),
