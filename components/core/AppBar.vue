@@ -33,8 +33,26 @@
       </div>
     </v-app-bar>
     <div>
-      <v-navigation-drawer v-model="drawer" :right="right" temporary fixed>
+      <v-navigation-drawer
+        v-model="drawer"
+        :right="right"
+        temporary
+        fixed
+        src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+      >
         <v-list>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="title">
+                Boost Media Inc
+              </v-list-item-title>
+              <v-list-item-subtitle>
+                Digital Marketing
+              </v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
           <v-list-item v-for="item in Menuitems" :key="item.title" link>
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -66,9 +84,13 @@ export default {
     rightDrawer: false,
     title: "Vuetify.js",
     Menuitems: [
-      { title: "Services", icon: "dashboard" },
-      { title: "Projects", icon: "account_box" },
-      { title: "Contact", icon: "gavel" }
+      { title: "Home", icon: "mdi-home-city", to: "/" },
+      { title: "SEO", icon: "dashboard", to: "/seo" },
+      { title: "Web Development", icon: "dashboard", to: "/web-development" },
+      { title: "E-commerce", icon: "dashboard", to: "/ecommerce" },
+      { title: "Paid Advertizing", icon: "dashboard", to: "/payperclick" },
+      { title: "Social Media", icon: "dashboard", to: "/" },
+      { title: "Contact Us", icon: "dashboard", to: "/contact" }
     ]
   }),
   computed: {
