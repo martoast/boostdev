@@ -6,12 +6,12 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + 'Digital Solutions',
+    titleTemplate: '⭐ Best Rated Digital Marketing Agency in Tijuana - ' + 'Web Development, SEO, Social Media',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Experts in Ecommerce-Web Development-SEO.' }
+      { hid: 'description', name: 'description', content: 'Digital Marketing and SEO Sevices In Tijuana' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

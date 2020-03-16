@@ -145,9 +145,16 @@ import WebDevBlog from "~/components/sections/WebDevBlog";
 import SectionHeader from "~/components/SectionHeader";
 export default {
   layout: "webdevLayout",
-  metaInfo() {
+  head() {
     return {
-      title: ""
+      title: "Web Development in Tijuana",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Web Development Services in Tijuana."
+        }
+      ]
     };
   },
 

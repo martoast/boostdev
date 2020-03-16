@@ -112,9 +112,16 @@ import PPCBlog from "~/components/sections/PPCBlog";
 export default {
   layout: "ppcLayout",
 
-  metaInfo() {
+  head() {
     return {
-      title: ""
+      title: "Paid Digital Advertizing in Tijuana",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Pay per Click Advertizing Services in Tijuana"
+        }
+      ]
     };
   },
 

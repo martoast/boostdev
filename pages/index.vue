@@ -21,9 +21,37 @@
 
 <script>
 export default {
-  metaInfo() {
+  head() {
     return {
-      title: ""
+      title: "Digital Marketing Tijuana",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "description",
+          name: "description",
+          content: "Digital Marketing and SEO in Tijuana"
+        }
+      ]
+    };
+  },
+  jsonld() {
+    return {
+      "@context": "http://schema.org",
+      "@type": "Coporation",
+      LegalName: "Boost Media Inc",
+      description:
+        "⭐ Best Rated Digital Marketing Agency in Tijuana - Web Development, SEO, Social Media",
+      url: "https://www.boostmediainc.com",
+      logo: "LOGO URL HERE",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "900 Linton Blvd Suite 104",
+        addressLocality: "Delray Beach",
+        addressRegion: "FL",
+        postalCode: "33444",
+        addressCountry: "USA"
+      },
+      sameAs: ["https://www.facebook.com/boostmediainc"]
     };
   },
 

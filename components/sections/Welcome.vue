@@ -2,8 +2,8 @@
   <section id="welcome">
     <SectionHeader
       header="Welcome"
-      sub-header="Boost Your Sales Using The Latest In Digital Marketing"
-      text="See why Boost has the right solution for you!"
+      sub-header="Our Business is Growing Yours."
+      text="See why Boost Media has the right solution for you!"
     />
 
     <v-container

@@ -26,8 +26,9 @@
               color="primary"
               class="px-5"
               large
+              to="/contact"
             >
-              Read More
+              Contact Us
             </v-btn>
           </v-col>
           <v-col
@@ -94,22 +95,17 @@ import SeoServices from "~/components/sections/SeoServices.vue";
 export default {
   head() {
     return {
-      title: "Experts in SEO and SERPS",
+      title: "#1 SEO Service in Tijuana",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Boost your website or store to the first page of Google!"
+          content: "Professional SEO services in Tijuana"
         }
       ]
     };
   },
-  metaInfo() {
-    return {
-      title: "Boost Development SEO",
-      content: "Experts in SEO and SERP"
-    };
-  },
+
   layout: "service",
 
   components: { SeoFeatures, SeoBlog, SeoServices },

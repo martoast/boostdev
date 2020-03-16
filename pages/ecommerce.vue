@@ -101,13 +101,12 @@ import EcomFeatures from "~/components/sections/EcomFeatures.vue";
 export default {
   head() {
     return {
-      title: "Experts in Ecommerce",
+      title: "Ecommerce in Tijuana",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "We build top quality Ecommerce stores using the best tools and frameworks."
+          content: "Ecommerce and CRM services in Tijuana"
         }
       ]
     };
