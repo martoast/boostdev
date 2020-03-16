@@ -32,11 +32,13 @@ export default {
     return {
       "@context": "http://schema.org",
       "@type": "LocalBusiness",
-      LegalName: "Boost Media Inc",
-      description:
-        "⭐ Best Rated Digital Marketing Agency in Tijuana - Web Development, SEO, Social Media",
+      LegalName: "Boost Media inc",
+      name: "Boost Media Inc",
+      telephone: "+16198885248",
+      priceRange: "700-4500",
+      description: "Experts in Ecommerce Stores that SELL!",
       url: "https://www.boostmediainc.com",
-      logo: "LOGO URL HERE",
+      logo: "https://imgur.com/ug3zA9V",
       address: {
         "@type": "PostalAddress",
         streetAddress: "900 Linton Blvd Suite 104",
