@@ -23,6 +23,7 @@
 export default {
   head() {
     return {
+      charset: "utf-8",
       title: "Digital Marketing Tijuana",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
