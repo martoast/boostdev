@@ -1,12 +1,9 @@
 <template>
-  <v-app dark>
-
+  <v-app>
     <AppBar />
 
     <v-content>
-
       <v-container class="pb-12">
-
         <nuxt />
       </v-container>
       <div class="mb-12">
@@ -14,7 +11,6 @@
       </div>
 
       <Testimonials />
-
     </v-content>
 
     <Footer />

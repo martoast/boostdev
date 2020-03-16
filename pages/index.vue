@@ -1,11 +1,6 @@
 <template>
   <div>
-
-    <section
-      id="home"
-      class="pa-0"
-    >
-
+    <section id="home" class="pa-0">
       <welcome />
 
       <services />
@@ -14,9 +9,7 @@
 
       <!-- <try-it /> -->
     </section>
-
   </div>
-
 </template>
 
 <script>
@@ -38,7 +31,7 @@ export default {
   jsonld() {
     return {
       "@context": "http://schema.org",
-      "@type": "Coporation",
+      "@type": "LocalBusiness",
       LegalName: "Boost Media Inc",
       description:
         "⭐ Best Rated Digital Marketing Agency in Tijuana - Web Development, SEO, Social Media",

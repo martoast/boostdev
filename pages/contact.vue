@@ -22,7 +22,7 @@ export default {
   jsonld() {
     return {
       "@context": "http://schema.org",
-      "@type": "Coporation",
+      "@type": "LocalBusiness",
       LegalName: "Boost Media inc",
       description: "Experts in Ecommerce Stores that SELL!",
       url: "https://www.boostmediainc.com",
