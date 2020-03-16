@@ -28,7 +28,6 @@
       <!-- <Demo /> -->
     </v-content>
 
-    <Contact />
     <Footer />
   </v-app>
 </template>

@@ -1,5 +1,63 @@
 <template>
   <div>
+    <section>
+      <v-container>
+        <v-row>
+          <v-col
+            cols="12"
+            md="6"
+          >
+            <h2
+              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
+              class="mb-4"
+            >
+              Industry Tested UX!<br />
+            </h2>
+
+            <p class="subtitle-1">
+              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
+              vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
+              pellentesque mollis, felis nunc ultrices eros, sed gravida augue
+              augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
+              id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
+              pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
+              ullamcorper mauris at ligula.
+            </p>
+            <p class="mb-5">
+              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
+              dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit
+              risus. Donec vitae sapien ut libero venenatis faucibus. In hac
+              habitasse platea dictumst. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem.
+            </p>
+
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+              to="/contact"
+            >
+              Contact Us
+            </v-btn>
+          </v-col>
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
+            <v-card class="hidden-sm-and-down">
+              <v-img
+                src="https://media-exp1.licdn.com/dms/image/C4D22AQEslxxFTNKWtg/feedshare-shrink_1280/0?e=1586995200&v=beta&t=ekMx0AU5zNltnIlwEjfa3uGgAxLT07HnMkF0cMXmiA8"
+                height="500"
+              >
+              </v-img>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
 
     <section>
       <WebDevSamples />
