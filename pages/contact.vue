@@ -22,20 +22,27 @@ export default {
   jsonld() {
     return {
       "@context": "http://schema.org",
-      "@type": "Coporation",
+      "@type": "LocalBusiness",
       LegalName: "Boost Media inc",
+      name: "Boost Media Inc",
+      telephone: "+16198885248",
+      priceRange: "700-4500",
+      image: "https://imgur.com/ug3zA9V",
       description: "Experts in Ecommerce Stores that SELL!",
       url: "https://www.boostmediainc.com",
-      logo: "LOGO URL HERE",
+      logo: "https://imgur.com/ug3zA9V",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "900 Linton Blvd Suite 104",
-        addressLocality: "Delray Beach",
-        addressRegion: "FL",
-        postalCode: "33444",
-        addressCountry: "USA"
+        streetAddress: "José Clemente Orozco 10093",
+        addressLocality: "Tijuana",
+        addressRegion: "B.C.",
+        postalCode: "22010",
+        addressCountry: "MX"
       },
-      sameAs: ["https://www.facebook.com/boostmediainc"]
+      sameAs: [
+        "https://www.facebook.com/boostmediainc",
+        "https://www.instagram.com/boostmediainc"
+      ]
     };
   }
 };
