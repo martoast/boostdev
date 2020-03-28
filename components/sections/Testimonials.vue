@@ -1,12 +1,5 @@
 <template>
   <div class="pt-12">
-    <div class="hidden-sm-and-down">
-      <SectionHeader
-        header="Testimonials"
-        sub-header="Read what some of our clients had to say!"
-        text="Boost is trusted by clients internationaly."
-      />
-    </div>
 
     <v-container
       id="highlighted-testimonial"
@@ -14,16 +7,30 @@
       fluid
       tag="section"
     >
+
       <v-parallax
         contain
         src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       >
-        <v-overlay absolute class="px-3" opacity=".8">
-          <testimonial dark :testimonial="highlightedTestimonial" />
+
+        <v-overlay
+          absolute
+          class="px-3"
+          opacity=".8"
+        >
+
+          <Welcome />
         </v-overlay>
       </v-parallax>
     </v-container>
     <v-container class="hidden-sm-and-down">
+      <div class="hidden-sm-and-down">
+        <SectionHeader
+          header="Testimonials"
+          sub-header="Read what some of our clients had to say!"
+          text="Boost is trusted by clients internationaly."
+        />
+      </div>
       <v-row>
         <v-col
           v-for="(testimonial, i) in testimonials"
@@ -41,7 +48,8 @@
 export default {
   components: {
     Testimonial: () => import("@/components/Testimonial"),
-    SectionHeader: () => import("@/components/SectionHeader")
+    SectionHeader: () => import("@/components/SectionHeader"),
+    Welcome: () => import("~/components/sections/Welcome")
   },
   data: () => ({
     testimonials: [

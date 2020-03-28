@@ -1,11 +1,15 @@
 <template>
   <div>
-    <section id="home" class="pa-0">
-      <welcome />
+    <section
+      id="home"
+      class="pa-0"
+    >
+
+      <About />
 
       <services />
 
-      <features />
+      <!-- <features /> -->
 
       <!-- <try-it /> -->
     </section>
@@ -60,6 +64,7 @@ export default {
     Features: () => import("~/components/sections/Features"),
     Services: () => import("~/components/sections/Services"),
     Testimonials: () => import("@/components/sections/Testimonials"),
+    About: () => import("@/components/sections/About"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),

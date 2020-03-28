@@ -20,11 +20,12 @@
             class="mb-4"
             :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
           >
-            Boost Media Inc
+            Data Driven, Results Oriented Digital Marketing.
           </h1>
 
           <p class="title font-weight-light">
-            <strong>Data Driven, Results Oriented Digital Marketing.</strong>
+            <strong>Speak with a results specialist today to get started with
+              SEO, PPC, social media, web design & more.</strong>
           </p>
 
           <div class="py-4" />
@@ -49,13 +50,13 @@
             <v-btn
               class="text--primary my-2"
               color="white"
-              href="#try-it"
               large
               min-width="175"
               rounded
-              to="/services"
+              href="tel: +1 (619) 888-5258"
             >
-              Explore Our Services
+              <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+              +1 (619) 888-5258
             </v-btn>
           </v-row>
         </v-sheet>

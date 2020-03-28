@@ -1,20 +1,49 @@
 <template>
   <div>
     <div class="hidden-sm-and-down">
-      <v-footer dark height="auto" padless>
+      <v-footer
+        dark
+        height="auto"
+        padless
+      >
         <v-row class="ma-0">
-          <v-col class="py-5 primary darken-2 white--text" cols="12" md="3">
+          <v-col
+            class="py-5 black white--text"
+            cols="12"
+            md="3"
+          >
             <h3 class="headline mb-3">Boost Media Inc</h3>
             <ul class="body-1 pl-0">
-              <li v-for="(c, i) in company" :key="i" class="mb-3">
-                <a class="transition-swing" v-text="c.title" :href="c.link" />
+              <li
+                v-for="(c, i) in company"
+                :key="i"
+                class="mb-3"
+              >
+                <a
+                  class="transition-swing"
+                  v-text="c.title"
+                  :href="c.link"
+                />
               </li>
             </ul>
           </v-col>
-          <v-col class="blue-grey darken-2 pa-5" cols="12" md="9">
+          <v-col
+            class="black white--text pa-5"
+            cols="12"
+            md="9"
+          >
             <v-row>
-              <v-col v-for="(category, i) in categories" :key="i" cols="12" md="6">
-                <v-btn text v-text="category.title" :to="category.link"></v-btn>
+              <v-col
+                v-for="(category, i) in categories"
+                :key="i"
+                cols="12"
+                md="6"
+              >
+                <v-btn
+                  text
+                  v-text="category.title"
+                  :to="category.link"
+                ></v-btn>
               </v-col>
             </v-row>
           </v-col>
@@ -27,10 +56,23 @@
       </v-footer>
     </div>
     <div class="hidden-md-and-up">
-      <v-footer dark padless>
-        <v-card class="flex" flat tile>
+      <v-footer
+        dark
+        padless
+      >
+        <v-card
+          class="flex"
+          flat
+          tile
+        >
           <v-card-title class="teal">
-            <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+            <v-btn
+              v-for="icon in icons"
+              :key="icon"
+              class="mx-4"
+              dark
+              icon
+            >
               <v-icon size="24px">{{ icon }}</v-icon>
             </v-btn>
           </v-card-title>

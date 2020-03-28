@@ -1,10 +1,5 @@
 <template>
   <section id="welcome">
-    <SectionHeader
-      header="Welcome"
-      sub-header="Our Business is Growing Yours."
-      text="See why Boost Media has the right solution for you!"
-    />
 
     <v-container
       :pt-5="$vuetify.breakpoint.mdAndUp"

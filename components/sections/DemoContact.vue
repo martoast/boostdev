@@ -10,7 +10,8 @@
         justify="center"
       >
         <h3 class="headline font-weight-light ">
-          Get started Boosting <strong>Your Business</strong> Today!
+          READY TO <strong>GROW YOUR BUSSINESS</strong>? GET YOUR FREE PROPOSAL TODAY:
+
         </h3>
 
         <v-spacer class="hidden-sm-and-down" />
