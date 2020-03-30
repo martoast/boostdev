@@ -90,9 +90,9 @@ export default {
           "Our team of experts will design the perfect UI for your application."
       },
       {
-        icon: "mdi-widgets",
-        color: "deep-purple accent-4",
-        header: "Long-term Support",
+        icon: "mdi-trophy-variant",
+        color: "yellow",
+        header: "Proven Performance",
         text:
           "Feel confident in the life-span of your product with major version long-term support."
       },

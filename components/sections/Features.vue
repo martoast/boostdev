@@ -17,7 +17,7 @@
           tag="section"
         >
 
-          <v-parallax
+          <!-- <v-parallax
             contain
             src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
           >
@@ -26,11 +26,11 @@
               absolute
               class="px-3"
               opacity=".8"
-            >
+            > -->
 
-              <Welcome />
-            </v-overlay>
-          </v-parallax>
+          <Welcome />
+          <!-- </v-overlay>
+          </v-parallax> -->
         </v-container>
 
       </div>

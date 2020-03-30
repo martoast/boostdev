@@ -58,7 +58,7 @@ export default {
     SectionHeader
   },
   data: () => ({
-    src: require("@/assets/artoftravel.png"),
+    src: require("@/assets/grow.png"),
     highlights: [
       "Architecture development",
       "Cloud computing",

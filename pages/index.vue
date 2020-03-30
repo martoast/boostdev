@@ -13,6 +13,7 @@
       <!-- <features /> -->
 
       <!-- <try-it /> -->
+      <About2 />
     </section>
   </div>
 </template>
@@ -67,6 +68,7 @@ export default {
     Testimonials: () => import("@/components/sections/Testimonials"),
     About: () => import("@/components/sections/About"),
     Features: () => import("@/components/sections/Features"),
+    About2: () => import("@/components/sections/About2"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),
