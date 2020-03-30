@@ -70,23 +70,22 @@ export default {
           "Whether it's desktop, tablet or mobile, your application will just work, right out of the box."
       },
       {
-        icon: "mdi-cogs",
+        icon: "mdi-account-multiple",
         color: "indigo",
-        header: "Customizable",
-        text:
-          "Each component comes packed full of customization features that allow you to handle any use-case."
+        header: "Dedicated account manager for each account",
+        text: "Tdf"
       },
       {
         icon: "mdi-material-design",
         color: "teal",
-        header: "UI Kit",
+        header: "On-staff experts in marketing, design & development",
         text:
           "Built with Material Design, each component is built to scale. Smooth interface across all screen sizes."
       },
       {
-        icon: "mdi-brush",
+        icon: "mdi-chart-bar",
         color: "red lighten-2",
-        header: "Design",
+        header: "Clear and concise reporting",
         text:
           "Our team of experts will design the perfect UI for your application."
       },
@@ -100,7 +99,7 @@ export default {
       {
         icon: "mdi-google",
         color: "red",
-        header: "SEO Optimized",
+        header: "Elite partner status with Google, Facebook and more",
         text:
           "Is your store or web app not getting any traffic? Optimizing for Google ranking factors is essential in the success of any online presence."
       }

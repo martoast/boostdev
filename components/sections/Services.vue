@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-6">
     <SectionHeader
       header="Services"
       sub-header="Areas of focus"

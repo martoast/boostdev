@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="hidden-sm-and-down">
+    <div>
+
       <v-footer
         dark
         height="auto"
@@ -32,7 +33,7 @@
             cols="12"
             md="9"
           >
-            <v-row>
+            <v-row class="hidden-sm-and-down">
               <v-col
                 v-for="(category, i) in categories"
                 :key="i"
@@ -49,13 +50,13 @@
           </v-col>
 
           <v-col
-            class="text-center blue-grey darken-4 pa-3"
+            class="text-center black white--text pa-3"
             cols="12"
           >&copy; 2020 Boost Media Inc — All Rights reserved.</v-col>
         </v-row>
       </v-footer>
     </div>
-    <div class="hidden-md-and-up">
+    <!-- <div>
       <v-footer
         dark
         padless
@@ -65,7 +66,7 @@
           flat
           tile
         >
-          <v-card-title class="teal">
+          <v-card-title class="black">
             <v-btn
               v-for="icon in icons"
               :key="icon"
@@ -77,13 +78,10 @@
             </v-btn>
           </v-card-title>
 
-          <v-card-text class="py-2 white--text text-center">
-            {{ new Date().getFullYear() }} —
-            <strong>Vuetify</strong>
-          </v-card-text>
         </v-card>
       </v-footer>
-    </div>
+    </div> -->
+
   </div>
 </template>
 
@@ -91,15 +89,17 @@
 export default {
   data: () => ({
     categories: [
-      { title: "Success Stories", link: "/stories" },
-      { title: "Case Studies", link: "/case-studies" },
-      { title: "Testimonials", link: "/testimonials" }
+      { title: "SEO Services", link: "/seo" },
+      { title: "Web Development", link: "/web-development" },
+      { title: "E-Commerce", link: "/ecommerce" },
+      { title: "Digital Marketing", link: "/payperclick" }
     ],
     company: [
       { title: "About", link: "/about/" },
       { title: "Services", link: "/services" },
-      { title: "Projects", link: "/projects" },
-      { title: "Our Team", link: "/about/team" }
+      { title: "Case Studies", link: "/case-studies" },
+      { title: "Meet the Team", link: "/about/team" },
+      { title: "Contact us", link: "/contact" }
     ],
     icons: [
       "mdi-facebook",

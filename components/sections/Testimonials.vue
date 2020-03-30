@@ -1,28 +1,6 @@
 <template>
-  <div class="pt-12">
+  <div class="pt-6">
 
-    <v-container
-      id="highlighted-testimonial"
-      class="pt-5 px-0 mb-n3"
-      fluid
-      tag="section"
-    >
-
-      <v-parallax
-        contain
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      >
-
-        <v-overlay
-          absolute
-          class="px-3"
-          opacity=".8"
-        >
-
-          <Welcome />
-        </v-overlay>
-      </v-parallax>
-    </v-container>
     <v-container class="hidden-sm-and-down">
       <div class="hidden-sm-and-down">
         <SectionHeader

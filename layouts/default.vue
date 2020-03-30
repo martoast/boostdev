@@ -3,19 +3,19 @@
 
     <AppBar />
     <Hero />
-    <DemoContact />
+    <DemoContact2 />
     <v-content>
 
       <v-container class="pb-12">
 
         <nuxt />
       </v-container>
-      <div class="mb-12">
+      <div>
 
       </div>
-      <DemoContact />
-
       <Testimonials />
+
+      <!-- <DemoContact /> -->
 
     </v-content>
 
@@ -35,6 +35,7 @@ export default {
     Hero,
     Demo,
     DemoContact: () => import("~/components/sections/DemoContact"),
+    DemoContact2: () => import("~/components/sections/DemoContact"),
     Testimonials: () => import("~/components/sections/Testimonials"),
     Footer: () => import("~/components/core/Footer"),
     Contact

@@ -56,7 +56,7 @@
               href="tel: +1 (619) 888-5258"
             >
               <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
-              +1 (619) 888-5258
+              CALL NOW
             </v-btn>
           </v-row>
         </v-sheet>
