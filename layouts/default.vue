@@ -6,10 +6,10 @@
     <DemoContact2 />
     <v-content>
 
-      <v-container class="pb-12">
-
+      <div class="pb-12">
         <nuxt />
-      </v-container>
+      </div>
+
       <div>
 
       </div>

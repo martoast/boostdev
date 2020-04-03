@@ -6,7 +6,10 @@
     >
 
       <About />
-      <Features />
+      <!-- <Features /> -->
+      <Features2 />
+
+      <Stats />
 
       <services />
 
@@ -69,6 +72,8 @@ export default {
     About: () => import("@/components/sections/About"),
     Features: () => import("@/components/sections/Features"),
     About2: () => import("@/components/sections/About2"),
+    Features2: () => import("@/components/sections/Features2"),
+    Stats: () => import("@/components/sections/Stats"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),
