@@ -10,7 +10,7 @@
         justify="center"
       >
         <h3 class="headline font-weight-light ">
-          READY TO <strong>GROW YOUR BUSSINESS</strong>? GET YOUR FREE PROPOSAL TODAY:
+          READY TO <strong>GROW YOUR BUSINESS</strong>? GET YOUR FREE PROPOSAL TODAY:
 
         </h3>
 

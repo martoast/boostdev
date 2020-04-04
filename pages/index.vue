@@ -8,6 +8,7 @@
       <About />
       <!-- <Features /> -->
       <Features2 />
+      <DemoContact2 />
 
       <Stats />
 
@@ -74,6 +75,7 @@ export default {
     About2: () => import("@/components/sections/About2"),
     Features2: () => import("@/components/sections/Features2"),
     Stats: () => import("@/components/sections/Stats"),
+    DemoContact2: () => import("~/components/sections/DemoContact"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),

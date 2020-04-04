@@ -42,10 +42,10 @@ export default {
   data() {
     return {
       stats: [
-        ["24k", "Github Stars"],
-        ["330+", "Releases"],
-        ["1m", "Downloads/mo"],
-        ["5m", "Total Downloads"]
+        ["#1", "First page on Google"],
+        ["1000+", "Leads Generated"],
+        ["100%", "Custom Templates"],
+        ["5 yrs", "Experience in Digital Marketing"]
       ]
     };
   }
