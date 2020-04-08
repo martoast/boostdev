@@ -8,11 +8,19 @@
       <About />
       <!-- <Features /> -->
       <Features2 />
-      <DemoContact2 />
 
       <Stats />
+      <DemoContact2 />
 
       <services />
+      <div>
+        <SectionHeader
+          header="Boost Team"
+          sub-header="Meet our Team"
+          text="At Boost we have built a strong core team of experts ready to help your business take full advantage of digital verticles."
+        />
+        <TeamItemGroup />
+      </div>
 
       <!-- <features /> -->
 
@@ -76,6 +84,8 @@ export default {
     Features2: () => import("@/components/sections/Features2"),
     Stats: () => import("@/components/sections/Stats"),
     DemoContact2: () => import("~/components/sections/DemoContact"),
+    TeamItemGroup: () => import("~/components/sections/TeamItemGroup"),
+    SectionHeader: () => import("~/components/SectionHeader"),
 
     Pricing: () => import("~/components/sections/Pricing"),
     TryIt: () => import("~/components/sections/TryIt"),

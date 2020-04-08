@@ -17,15 +17,15 @@
         <v-spacer class="hidden-sm-and-down" />
 
         <v-btn
-          class="my-3"
-          to="/contact"
+          class="text--primary my-2"
+          color="white"
           large
-          min-width="128"
-          rel="noopener"
+          min-width="175"
           rounded
-          target="_blank"
+          href="tel: +1 (619) 888-5258"
         >
-          Contact Us
+          <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+          CALL NOW
         </v-btn>
       </v-row>
     </v-container>

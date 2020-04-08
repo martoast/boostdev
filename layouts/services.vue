@@ -1,9 +1,9 @@
 <template>
   <v-app dark>
 
-    <AppBar />
+    <AppBar2 />
 
-    <v-parallax
+    <!-- <v-parallax
       height="200"
       src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
     >
@@ -19,12 +19,12 @@
 
         </v-col>
       </v-row>
-    </v-parallax>
+    </v-parallax> -->
 
     <v-content>
-      <v-container class="pb-12">
-        <nuxt />
-      </v-container>
+
+      <nuxt />
+
       <!-- <Demo /> -->
     </v-content>
 
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import AppBar from "~/components/core/AppBar.vue";
+import AppBar2 from "~/components/core/AppBar2.vue";
 
 export default {
   components: {
-    AppBar,
+    AppBar2,
     Footer: () => import("~/components/core/Footer")
   },
   data() {

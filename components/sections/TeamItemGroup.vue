@@ -1,7 +1,8 @@
 <template>
   <v-card
-    max-width="400"
+    width="100vh"
     class="mx-auto"
+    flat
   >
     <v-container class="pa-1">
       <v-item-group
@@ -17,7 +18,7 @@
           >
 
             <v-item v-slot:default="{ active, toggle }">
-              <v-card>
+              <v-card flat>
                 <v-row justify="center">
                   <v-avatar size="150">
                     <img
@@ -31,7 +32,7 @@
 
                 <v-card-title>{{item.name}}</v-card-title>
 
-                <v-card-subtitle class="pb-0">{{item.position}}</v-card-subtitle>
+                <v-card-subtitle>{{item.position}}</v-card-subtitle>
 
               </v-card>
 
@@ -73,12 +74,6 @@ export default {
       {
         name: "Sandra Adams",
         src: "https://randomuser.me/api/portraits/women/85.jpg",
-        position: "CEO and BOSS man",
-        content: ""
-      },
-      {
-        name: "Alex Martos",
-        src: "https://cdn.vuetifyjs.com/images/john.jpg",
         position: "CEO and BOSS man",
         content: ""
       },

@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  layout: "contactLayout",
+  layout: "services",
   components: {
     SectionHeader: () => import("~/components/SectionHeader"),
     Contact: () => import("~/components/sections/Contact")

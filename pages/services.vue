@@ -1,108 +1,117 @@
 <template>
   <div>
-    <SectionHeader
-      sub-header="Check out our services!"
-      text="Find the right solution for you."
-    />
-    <v-lazy
-      v-model="isActive"
-      :options="{
-          threshold: .5
-        }"
-      min-height="200"
-      transition="fade-transition"
+    <section
+      id="features"
+      class="grey lighten-3"
     >
-      <v-container
-        fluid
-        class="mx-auto pt-6 pb-6"
-      >
-        <v-row dense>
+
+      <v-container class="text-center">
+        <SectionHeader
+          sub-header="Explore our Services"
+          header="See why Boost Media has the right Digital Marketing solutions for you"
+        />
+
+        <v-row>
           <v-col
-            v-for="card in cards"
-            :key="card.title"
-            :cols="card.flex"
+            v-for="({ icon, title, route, text }, i) in features"
+            :key="i"
+            cols="12"
+            md="4"
           >
-            <v-hover v-slot:default="{ hover }">
-              <v-card
-                :to="card.route"
-                :elevation="hover ? 16 : 2"
+            <v-card
+              class="py-12 px-4"
+              color="grey lighten-5"
+              flat
+              :to="route"
+            >
+              <v-theme-provider dark>
+                <div>
+                  <v-avatar
+                    color="primary"
+                    size="88"
+                  >
+                    <v-icon
+                      large
+                      v-text="icon"
+                    ></v-icon>
+                  </v-avatar>
+                </div>
+              </v-theme-provider>
+
+              <v-card-title
+                class="justify-center font-weight-black text-uppercase"
+                v-text="title"
+              ></v-card-title>
+
+              <v-card-text
+                class="subtitle-1"
+                v-text="text"
               >
-                <v-img
-                  :src="card.src"
-                  class="white--text align-end"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                  height="300px"
-                  aspect-ratio="1.4"
-                >
-                  <v-expand-transition>
-                    <div
-                      v-if="hover"
-                      class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
-                      style="height: 100%;"
-                    ></div>
-                  </v-expand-transition>
-                  <v-card-title v-text="card.title"></v-card-title>
-                </v-img>
-              </v-card>
-            </v-hover>
+              </v-card-text>
+              <v-btn>Explore Service</v-btn>
+            </v-card>
           </v-col>
         </v-row>
       </v-container>
-    </v-lazy>
+
+      <div class="py-12"></div>
+    </section>
 
   </div>
 </template>
 <script>
 import SectionHeader from "~/components/SectionHeader.vue";
 export default {
-  layout: "services",
   components: {
     SectionHeader
   },
-  data: () => ({
-    isActive: false,
-    cards: [
-      {
-        title: "SEO",
-        route: "seo",
-        src: require("@/assets/seoservice.png"),
-        flex: 12
-      },
-      {
-        title: "Pay per Click",
-        route: "payperclick",
-        src: require("@/assets/enterprice.jpg"),
-        flex: 12
-      },
-
-      {
-        title: "E-commerce",
-        route: "ecommerce",
-        src: require("@/assets/magento.png"),
-        flex: 12
-      },
-      {
-        title: "Custom Web Development",
-        route: "webapp",
-        src: require("@/assets/webdev.png"),
-        flex: 12
-      }
-    ]
-  }),
-  jsonld() {
-    const items = this.cards.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      item: {
-        "@id": item.src,
-        name: item.title,
-        url: item.src
-      }
-    }));
+  layout: "services",
+  data() {
     return {
-      "@context": "http://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: items
+      features: [
+        {
+          icon: "mdi-account-group-outline",
+          title: "SEO services",
+          route: "/seo",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+        },
+        {
+          icon: "mdi-chart-line",
+          route: "/seo",
+          title: "Web Development",
+          text:
+            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+        },
+        {
+          icon: "mdi-cellphone-link",
+          route: "/seo",
+          title: "Facebook Marketing",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+        },
+        {
+          icon: "mdi-cellphone-link",
+          route: "/seo",
+          title: "Pay per Click",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+        },
+        {
+          icon: "mdi-cellphone-link",
+          route: "/seo",
+          title: "E-commerce",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+        },
+        {
+          icon: "mdi-cellphone-link",
+          route: "/seo",
+          title: "Enterprice Software",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+        }
+      ]
     };
   }
 };

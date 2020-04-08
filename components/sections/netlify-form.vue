@@ -20,7 +20,7 @@
           color="transparent"
           flat
         >
-          <SectionHeader subHeader="Contacto" />
+          <SectionHeader subHeader="Work with Boost." />
           <v-row>
             <v-col cols="12">
               <div>

@@ -7,8 +7,8 @@
 
       <v-container class="text-center">
         <SectionHeader
-          header="Features"
-          sub-header="The Last UI Kit You'll Ever Need"
+          header="Included with each service"
+          sub-header="What you can expect from us"
         />
 
         <v-row>

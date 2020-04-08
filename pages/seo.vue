@@ -15,10 +15,10 @@
             </h2>
 
             <p class="subtitle-1">
-              At Path, we develop SEO programs that maximize your visibility. Our campaigns stand out from the crowd through savvy content development and strategic link-building efforts. We leverage insights from paid search partners (including our own colleagues) to develop data-driven organic search strategies, but we know that only actionable SEO plans actually deliver results. That’s why we also maintain close communication with our clients’ extended network of partners, to keep everyone working together towards the goal of maximum web visibility.
+              At Boost, we develop SEO programs that maximize your visibility. Our campaigns stand out from the crowd through savvy content development and strategic link-building efforts. We leverage insights from paid search partners (including our own colleagues) to develop data-driven organic search strategies, but we know that only actionable SEO plans actually deliver results. That’s why we also maintain close communication with our clients’ extended network of partners, to keep everyone working together towards the goal of maximum web visibility.
             </p>
             <p class="mb-5">
-              Great SEO is collaborative, multi-faceted, and constantly evolving. That's why we build close working relationships with all the crucial stakeholders and agency teams on the client side, from PR to social to paid media to business development, to ensure that our search engine optimization efforts are driven by smart, consistent, and realistically actionable strategies.
+              The core of our lead generation services is data and predictive analysis. Our performance is the result of meticulous programs crafted around your target audience, search engine optimization strategies and your ROI.
             </p>
 
             <v-btn
@@ -47,9 +47,9 @@
         </v-row>
       </v-container>
     </section>
-    <section>
+    <!-- <section>
       <SeoServices />
-    </section>
+    </section> -->
 
     <section>
       <SeoFeatures />
@@ -106,7 +106,7 @@ export default {
     };
   },
 
-  layout: "service",
+  layout: "seoLayout",
 
   components: { SeoFeatures, SeoBlog, SeoServices },
 

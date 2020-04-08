@@ -10,21 +10,21 @@
         justify="center"
       >
         <h3 class="headline font-weight-light ">
-          Want to see for yourself? Checkout our vast component options!
+          Want to see for yourself? Give us a call TODAY!
         </h3>
 
         <v-spacer class="hidden-sm-and-down" />
 
         <v-btn
-          class="my-3"
-          href="https://vuetifyjs.com/components/api-explorer"
+          class="text--primary my-2"
+          color="white"
           large
-          min-width="128"
-          rel="noopener"
+          min-width="175"
           rounded
-          target="_blank"
+          href="tel: +1 (619) 888-5258"
         >
-          Go to the Documentation
+          <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+          CALL NOW
         </v-btn>
       </v-row>
     </v-container>

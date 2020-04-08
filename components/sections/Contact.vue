@@ -3,7 +3,10 @@
     id="contact"
     class="py-5"
   >
-    <SectionHeader header="Contact Us" />
+    <SectionHeader
+      header="Work with Boost"
+      sub-header="Contact Us"
+    />
 
     <v-container>
       <v-row>
