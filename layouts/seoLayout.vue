@@ -13,10 +13,40 @@
         >
           <h1 class="display-1 font-weight-thin mb-4">Search Engine Optimization (SEO)</h1>
           <h4 class="subheading">Rank Higher, Faster with Boost SEO.</h4>
+          <div class="pt-6">
+            <v-btn
+              class="mr-md-3 my-2"
+              color="white"
+              large
+              min-width="175"
+              outlined
+              rounded
+              to="/about/"
+            >
+              Learn More
+            </v-btn>
+
+            <v-btn
+              class="text--primary my-2"
+              color="white"
+              large
+              min-width="175"
+              rounded
+              href="tel: +1 (619) 888-5258"
+            >
+              <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+              CALL NOW
+            </v-btn>
+
+          </div>
+
         </v-col>
       </v-row>
+
     </v-parallax>
-    <v-parallax
+    <LogoSheet />
+
+    <!-- <v-parallax
       height="300"
       src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
     >
@@ -35,7 +65,7 @@
 
         </v-col>
       </v-row>
-    </v-parallax>
+    </v-parallax> -->
 
     <v-content>
 
@@ -43,7 +73,6 @@
 
         <nuxt />
       </v-container>
-      <Demo />
 
     </v-content>
     <v-navigation-drawer
@@ -60,28 +89,27 @@
       </v-list>
     </v-navigation-drawer>
     <Contact />
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
-import Demo from "~/components/sections/Demo.vue";
+import DemoContact from "~/components/sections/DemoContact.vue";
 import Contact from "~/components/sections/Contact.vue";
+import LogoSheet from "~/components/sections/LogoSheet.vue";
+import Footer from "~/components/core/Footer.vue";
 
 export default {
   components: {
     AppBar,
     Hero,
-    Demo,
+    DemoContact,
     TryIt: () => import("~/components/sections/TryIt"),
-    Contact
+    Contact,
+    Footer,
+    LogoSheet
   },
   data() {
     return {

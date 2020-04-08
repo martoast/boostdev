@@ -2,7 +2,7 @@
   <div>
     <section
       id="features"
-      class="grey lighten-3"
+      class="grey lighten-3 pt-8"
     >
 
       <v-container class="text-center">
@@ -19,7 +19,7 @@
             md="4"
           >
             <v-card
-              class="py-12 px-4"
+              class="py-8 px-4"
               color="grey lighten-5"
               flat
               :to="route"
@@ -78,7 +78,7 @@ export default {
         },
         {
           icon: "mdi-chart-line",
-          route: "/seo",
+          route: "/web-development",
           title: "Web Development",
           text:
             "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
@@ -92,14 +92,14 @@ export default {
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/seo",
+          route: "/payperclick",
           title: "Pay per Click",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/seo",
+          route: "/ecommerce",
           title: "E-commerce",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"

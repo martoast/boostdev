@@ -25,7 +25,17 @@
                     height="350px"
                     :href="card.link"
                   >
+
                     <v-card-title v-text="card.title"></v-card-title>
+                    <v-card-subtitle
+                      class="pb-0 white--text"
+                      v-text="card.author"
+                    ></v-card-subtitle>
+
+                    <v-card-text class="white--text--primary">
+                      <div>{{card.content}}</div>
+                    </v-card-text>
+
                     <v-expand-transition>
                       <div
                         v-if="hover"
@@ -36,21 +46,6 @@
                   </v-img>
                 </a>
 
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-
-                  <v-btn icon>
-                    <v-icon>mdi-heart</v-icon>
-                  </v-btn>
-
-                  <v-btn icon>
-                    <v-icon>mdi-bookmark</v-icon>
-                  </v-btn>
-
-                  <v-btn icon>
-                    <v-icon>mdi-share-variant</v-icon>
-                  </v-btn>
-                </v-card-actions>
               </v-card>
             </v-hover>
           </v-col>
@@ -67,6 +62,9 @@ export default {
     cards: [
       {
         title: "How Nuxt solves the SEO problems",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src: "https://miro.medium.com/max/4288/1*vqGPNd14IEKABWxpJTfNsw.jpeg",
         flex: 6,
         link:
@@ -74,6 +72,9 @@ export default {
       },
       {
         title: "Favorite road trips",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src:
           "https://www.paldesk.com/wp-content/uploads/2019/08/ecommerce-guide-how-to-start-an-ecommerce-business-1024x439.png",
         flex: 6,
@@ -82,6 +83,9 @@ export default {
       },
       {
         title: "Best airlines",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src:
           "https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2015/05/31143018/Qu%C3%A9-es-el-eCommerce-compressor.jpg",
         flex: 6,
@@ -89,6 +93,9 @@ export default {
       },
       {
         title: "Blog post 4",
+        author: "By Susana Galvano - May 21, 2019",
+        content:
+          "To understand the concept of Magento and Shopify platforms better, let us analyze this example:",
         src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
         flex: 6,
         link:

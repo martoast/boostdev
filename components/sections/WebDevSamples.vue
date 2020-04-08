@@ -2,7 +2,7 @@
   <div>
     <SectionHeader
       header="Example Pages"
-      sub-header="Sample Landing Pages"
+      sub-header="Check out some of our work!"
     />
     <v-card class="mx-auto">
 

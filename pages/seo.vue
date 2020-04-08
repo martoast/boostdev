@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <section>
       <v-container>
         <v-row>
@@ -55,37 +56,9 @@
       <SeoFeatures />
     </section>
 
-    <section>
-      <v-container>
-        <v-row>
-          <v-col
-            v-for="([icon, number, name], i) in experiences"
-            :key="i"
-            cols="6"
-            md="3"
-          >
-            <div class="text-center">
-              <v-icon
-                size="64"
-                class="mb-3"
-                v-text="icon"
-              />
-              <div
-                class="display-2 font-weight-bold mb-2"
-                v-text="number"
-              />
-              <div
-                class="text-uppercase"
-                v-text="name"
-              />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
-    <section>
+    <!-- <section>
       <SeoBlog />
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
@@ -110,14 +83,7 @@ export default {
 
   components: { SeoFeatures, SeoBlog, SeoServices },
 
-  data: () => ({
-    experiences: [
-      ["mdi-vuejs", "Vue"],
-      ["mdi-vuetify", "Vuetify"],
-      ["mdi-aws", "AWS"],
-      ["mdi-server-security", "Security"]
-    ]
-  }),
+  data: () => ({}),
 
   computed: {}
 };
