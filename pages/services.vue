@@ -72,23 +72,23 @@ export default {
         {
           icon: "mdi-account-group-outline",
           title: "SEO services",
-          route: "/seo",
+          route: "/services/seo",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            "The foundation of our lead generation services is data predictive analysis driven by data. Our performance is the result of a strategy crafted around your target audience, search engine optimization strategies and your ROI."
         },
         {
           icon: "mdi-chart-line",
           route: "/web-development",
           title: "Web Development",
           text:
-            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+            "While other agencies depend on fixed Website builders and templates that are a pain to customize, at Boost we work with the latest in web development technology to bring our clients the designs that they want to see!"
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/seo",
-          title: "Facebook Marketing",
+          route: "/leadgeneration",
+          title: "Lead Generation",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            "The foundation of our lead generation services is data predictive analysis driven by data. Our performance is the result of a strategy crafted around your target audience, search engine optimization strategies and your ROI."
         },
         {
           icon: "mdi-cellphone-link",
@@ -109,7 +109,7 @@ export default {
           route: "/seo",
           title: "Enterprice Software",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            "With our SEO services, you can turn on the power of search to maximize your inbound lead gen and scale your revenue and brand to where it belong."
         }
       ]
     };
