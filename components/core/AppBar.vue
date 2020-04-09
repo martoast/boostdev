@@ -97,19 +97,23 @@ export default {
     title: "Vuetify.js",
     Menuitems: [
       { title: "Home", icon: "mdi-home-city", to: "/" },
-      { title: "SEO", icon: "dashboard", to: "/services/seo" },
+      { title: "SEO", icon: "dashboard", to: "/services/seo/" },
       {
         title: "Web Development",
         icon: "dashboard",
-        to: "/services/web-development"
+        to: "/services/web-development/"
       },
-      { title: "E-commerce", icon: "dashboard", to: "/services/ecommerce" },
+      { title: "E-commerce", icon: "dashboard", to: "/services/ecommerce/" },
       {
         title: "Paid Advertizing",
         icon: "dashboard",
-        to: "/services/payperclick"
+        to: "/services/payperclick/"
       },
-      { title: "Social Media", icon: "dashboard", to: "/services/socialmedia" },
+      {
+        title: "Social Media",
+        icon: "dashboard",
+        to: "/services/socialmedia/"
+      },
       { title: "Contact Us", icon: "dashboard", to: "/contact" }
     ]
   }),

@@ -12,14 +12,14 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Our agency gets your brand in front of consumers.<br />
+              Your dedicated <strong>SEO</strong> agency that stops at nothing to drive you truly qualified organic traffic.<br />
             </h2>
 
             <p class="subtitle-1">
               At Boost, we develop SEO programs that maximize your visibility. Our campaigns stand out from the crowd through savvy content development and strategic link-building efforts. We leverage insights from paid search partners (including our own colleagues) to develop data-driven organic search strategies, but we know that only actionable SEO plans actually deliver results. That’s why we also maintain close communication with our clients’ extended network of partners, to keep everyone working together towards the goal of maximum web visibility.
             </p>
             <p class="mb-5">
-              The core of our lead generation services is data and predictive analysis. Our performance is the result of meticulous programs crafted around your target audience, search engine optimization strategies and your ROI.
+              Our proven, repeatable SEO optimization process results in a strong and meaningful action plan to land your website high in organic search results. We streamline your SEO efforts and help you focus on the right marketing goals.
             </p>
 
             <v-btn

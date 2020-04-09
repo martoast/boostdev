@@ -83,7 +83,7 @@ export default {
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/services/seo/leadgeneration",
+          route: "/services/seo/content",
           title: "SEO Content Writing",
           text: "Compelling, well-optimized content."
         },

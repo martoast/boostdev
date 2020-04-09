@@ -74,11 +74,11 @@ export default {
           title: "SEO services",
           route: "/services/seo",
           text:
-            "The foundation of our lead generation services is data predictive analysis driven by data. Our performance is the result of a strategy crafted around your target audience, search engine optimization strategies and your ROI."
+            "Our proven, repeatable SEO optimization process results in a strong and meaningful action plan to land your website high in organic search results."
         },
         {
           icon: "mdi-chart-line",
-          route: "/sevices/web-development",
+          route: "/services/web-development/",
           title: "Web Development",
           text:
             "While other agencies depend on fixed Website builders and templates that are a pain to customize, at Boost we work with the latest in web development technology to bring our clients the designs that they want to see!"
