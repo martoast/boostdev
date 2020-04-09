@@ -11,18 +11,11 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              Industry Tested UX!<br />
+              Great Websites Command Attention & Get Found<br />
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
-              vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
-              pellentesque mollis, felis nunc ultrices eros, sed gravida augue
-              augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
-              id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
-              pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
-              ullamcorper mauris at ligula.
+              We build user-centric websites increasing the ease of use for visitors to do what it is that brought them there, whether it's learn more about your products, submit an inquiry or make a purchase. We design with purpose with best-in-class SEO and UX optimization.
             </p>
             <p class="mb-5">
               Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
