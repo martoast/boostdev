@@ -7,8 +7,8 @@
 
       <v-container class="text-center">
         <SectionHeader
-          sub-header="Explore our SEO strategy"
-          header="Need SEO Services to Scale Inbound Lead Gen?"
+          sub-header="SEO Onpage Services"
+          header="Mastering Organic Growth"
         />
 
         <v-row>
@@ -22,7 +22,6 @@
               class="py-8 px-4"
               color="grey lighten-5"
               flat
-              :to="route"
             >
               <v-theme-provider dark>
                 <div>
@@ -48,13 +47,12 @@
                 v-text="text"
               >
               </v-card-text>
-              <v-btn>Explore Service</v-btn>
+              <v-btn to="/contact">Talk to an Expert</v-btn>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
 
-      <div class="py-12"></div>
     </section>
 
   </div>
@@ -70,41 +68,25 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-account-group-outline",
-          title: "On-page Optimization",
+          icon: "mdi-magnify",
+          title: "Full-range SEO",
           route: "/services/seo/onpage",
-          text: "Boost traffic and grow organic rankings."
+          text:
+            "On-site SEO optimization is just one part of the equation. We maximize its impact by delivering other core SEO services: content creation, link building, PR and social media management."
+        },
+        {
+          icon: "mdi-math-compass",
+          route: "/services/seo/keywords",
+          title: "First-class SEO team",
+          text:
+            "We closely monitor SEO trends and search engines’ updates and know what it takes to rank high in SERPs. Our website SEO services are adequately changing to keep up with new trends and techniques for the benefits of your business."
         },
         {
           icon: "mdi-chart-line",
-          route: "/services/seo/keywords",
-          title: "Targeted Keyword Research",
-          text: "The very foundation of your digital marketing strategy."
-        },
-        {
-          icon: "mdi-cellphone-link",
           route: "/services/seo/content",
-          title: "SEO Content Writing",
-          text: "Compelling, well-optimized content."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "/services/seo/linkbuilding",
-          title: "Trusted Link Building & PR",
-          text: "Link building powered by a 12-point quality checklist."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "/services/seo/pagespeed",
-          title: "Page Speed",
-          text: "Optimize the performance of your website."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "services/seo/localseo",
-          title: "Local SEO",
+          title: "ROI-focused SEO optimization",
           text:
-            "Dominate local search and consistently outrank your competition."
+            "We build a well-though-out on-site SEO optimization plan for the long term and prioritize queries that will make all the difference to your bottom line. This approach maximizes the impact of our SEO effort on your sales and revenue."
         }
       ]
     };

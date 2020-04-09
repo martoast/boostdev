@@ -7,8 +7,8 @@
 
       <v-container class="text-center">
         <SectionHeader
-          sub-header="Explore our SEO strategy"
-          header="Need SEO Services to Scale Inbound Lead Gen?"
+          sub-header="SEO Onpage Services"
+          header="Mastering Organic Growth"
         />
 
         <v-row>
@@ -22,7 +22,6 @@
               class="py-8 px-4"
               color="grey lighten-5"
               flat
-              :to="route"
             >
               <v-theme-provider dark>
                 <div>
@@ -48,13 +47,12 @@
                 v-text="text"
               >
               </v-card-text>
-              <v-btn>Explore Service</v-btn>
+              <v-btn to="/contact">Talk to an Expert</v-btn>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
 
-      <div class="py-12"></div>
     </section>
 
   </div>
@@ -70,41 +68,25 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-account-group-outline",
-          title: "On-page Optimization",
+          icon: "mdi-magnify",
+          title: "Boost organic traffic and growth",
           route: "/services/seo/onpage",
-          text: "Boost traffic and grow organic rankings."
+          text:
+            "Brands that produce content regularly benefit from constantly growing traffic and organic rankings in search results while staying cost-efficient."
+        },
+        {
+          icon: "mdi-math-compass",
+          route: "/services/seo/keywords",
+          title: "An exciting avenue for growth",
+          text:
+            "According to DemandMetric research, content generates 3x more leads than traditional marketing but costs 62% less. Traditional advertising isn’t even close."
         },
         {
           icon: "mdi-chart-line",
-          route: "/services/seo/keywords",
-          title: "Targeted Keyword Research",
-          text: "The very foundation of your digital marketing strategy."
-        },
-        {
-          icon: "mdi-cellphone-link",
           route: "/services/seo/content",
-          title: "SEO Content Writing",
-          text: "Compelling, well-optimized content."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "/services/seo/linkbuilding",
-          title: "Trusted Link Building & PR",
-          text: "Link building powered by a 12-point quality checklist."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "/services/seo/pagespeed",
-          title: "Page Speed",
-          text: "Optimize the performance of your website."
-        },
-        {
-          icon: "mdi-cellphone-link",
-          route: "services/seo/localseo",
-          title: "Local SEO",
+          title: "Keep up with the industry's trends",
           text:
-            "Dominate local search and consistently outrank your competition."
+            "According to CMI, 93% of B2B marketers rely on content, rather than paid acquisition, to build trust with their audience, engage, sell and stay on top of their customers’ minds."
         }
       ]
     };

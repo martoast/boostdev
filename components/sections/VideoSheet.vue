@@ -4,12 +4,12 @@
       <v-container>
 
         <SectionHeader
-          sub-header="Why Our SEO Keyword Research Services?"
+          sub-header="Why Our SEO Services?"
           header="Mastering Organic Growth"
         />
         <v-row
           align="center"
-          justify="center"
+          justify="space-between"
         >
           <v-col
             cols="12"
