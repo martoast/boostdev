@@ -90,14 +90,14 @@
 export default {
   data: () => ({
     categories: [
-      { title: "SEO Services", link: "/seo" },
-      { title: "Web Development", link: "/web-development" },
-      { title: "E-Commerce", link: "/ecommerce" },
-      { title: "Digital Marketing", link: "/payperclick" }
+      { title: "SEO Services", link: "/services/seo" },
+      { title: "Web Development", link: "/services/web-development" },
+      { title: "E-Commerce", link: "/services/ecommerce" },
+      { title: "Digital Marketing", link: "/services/payperclick" }
     ],
     company: [
       { title: "About", link: "/about/" },
-      { title: "Services", link: "/services" },
+      { title: "Services", link: "/services/" },
       { title: "Case Studies", link: "/case-studies" },
       { title: "Meet the Team", link: "/about/team" },
       { title: "Contact us", link: "/contact" }

@@ -55,7 +55,7 @@ export default {
       telephone: "+16198885248",
       priceRange: "700-4500",
       image: "https://imgur.com/ug3zA9V",
-      description: "Experts in Ecommerce Stores that SELL!",
+      description: "Data Driven, Results Oriented Digital Marketing.",
       url: "https://www.boostmediainc.com",
       logo: "https://imgur.com/ug3zA9V",
       address: {

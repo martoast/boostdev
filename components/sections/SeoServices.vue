@@ -72,36 +72,36 @@ export default {
         {
           icon: "mdi-account-group-outline",
           title: "On-page SEO Optimization",
-          route: "/seo",
+          route: "/services/seo/onpage",
           text: "Boost traffic and grow organic rankings."
         },
         {
           icon: "mdi-chart-line",
-          route: "/web-development",
+          route: "/services/seo/keywords",
           title: "Targeted Keyword Research",
           text: "The very foundation of your digital marketing strategy."
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/leadgeneration",
+          route: "/services/seo/leadgeneration",
           title: "SEO Content Writing",
           text: "Compelling, well-optimized content."
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/payperclick",
+          route: "/services/seo/linkbuilding",
           title: "Trusted Link Building & PR",
           text: "Link building powered by a 12-point quality checklist."
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/ecommerce",
+          route: "/services/seo/pagespeed",
           title: "Page Speed",
           text: "Optimize the performance of your website."
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/seo",
+          route: "services/seo/localseo",
           title: "Local SEO",
           text:
             "Dominate local search and consistently outrank your competition."

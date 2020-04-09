@@ -11,10 +11,18 @@
       <v-spacer />
       <div class="hidden-md-and-up">
         <v-toolbar-items>
-          <v-btn to="/contact" dark color="success" class="mr-12">
+          <v-btn
+            to="/contact"
+            dark
+            color="success"
+            class="mr-12"
+          >
             Contact Us
           </v-btn>
-          <v-icon @click.stop="drawer = !drawer" dark>mdi-menu</v-icon>
+          <v-icon
+            @click.stop="drawer = !drawer"
+            dark
+          >mdi-menu</v-icon>
         </v-toolbar-items>
       </div>
       <div class="hidden-sm-and-down">
@@ -53,7 +61,11 @@
           </v-list-item>
 
           <v-divider></v-divider>
-          <v-list-item v-for="item in Menuitems" :key="item.title" link>
+          <v-list-item
+            v-for="item in Menuitems"
+            :key="item.title"
+            link
+          >
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
@@ -85,11 +97,19 @@ export default {
     title: "Vuetify.js",
     Menuitems: [
       { title: "Home", icon: "mdi-home-city", to: "/" },
-      { title: "SEO", icon: "dashboard", to: "/seo" },
-      { title: "Web Development", icon: "dashboard", to: "/web-development" },
-      { title: "E-commerce", icon: "dashboard", to: "/ecommerce" },
-      { title: "Paid Advertizing", icon: "dashboard", to: "/payperclick" },
-      { title: "Social Media", icon: "dashboard", to: "/" },
+      { title: "SEO", icon: "dashboard", to: "/services/seo" },
+      {
+        title: "Web Development",
+        icon: "dashboard",
+        to: "/services/web-development"
+      },
+      { title: "E-commerce", icon: "dashboard", to: "/services/ecommerce" },
+      {
+        title: "Paid Advertizing",
+        icon: "dashboard",
+        to: "/services/payperclick"
+      },
+      { title: "Social Media", icon: "dashboard", to: "/services/socialmedia" },
       { title: "Contact Us", icon: "dashboard", to: "/contact" }
     ]
   }),
@@ -101,7 +121,7 @@ export default {
           text: "Home"
         },
         {
-          to: "/services",
+          to: "/services/",
           text: "Services"
         },
         {
