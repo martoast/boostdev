@@ -63,26 +63,26 @@ export default {
     cards: [
       {
         title: "SEO",
-        route: "seo",
+        route: "/services/seo",
         src: require("@/assets/seoservice.png"),
         flex: 6
       },
       {
         title: "Pay per Click",
-        route: "payperclick",
+        route: "/services/payperclick",
         src: require("@/assets/enterprice.jpg"),
         flex: 6
       },
 
       {
         title: "E-commerce",
-        route: "ecommerce",
+        route: "/services/ecommerce",
         src: require("@/assets/magento.png"),
         flex: 6
       },
       {
         title: "Custom Web Development",
-        route: "web-development",
+        route: "/services/web-development",
         src: require("@/assets/webdev.png"),
         flex: 6
       }
