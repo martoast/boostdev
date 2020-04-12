@@ -1,16 +1,25 @@
 <template>
   <div>
     <v-container>
+      <SectionHeader
+        header="Included with each service"
+        sub-header="What makes us stand out from the rest"
+      />
       <v-row>
-        <v-col v-for="(highlight, i) in highlights" :key="i" cols="12" md="4">
-          <v-card class="mx-n3" color="transparent" flat>
+        <v-col
+          v-for="(highlight, i) in highlights"
+          :key="i"
+          cols="12"
+          md="4"
+        >
+          <v-card
+            class="mx-n3"
+            color="transparent"
+            flat
+          >
             <v-card-title v-text="highlight.title" />
-            <v-card-text>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia Curae; Fusce id purus. Proin faucibus arcu quis
-              ante. Nulla consequat massa quis enim. Aenean tellus metus,
-              bibendum sed, posuere ac, mattis non, nunc. Fusce a quam.
-            </v-card-text>
+            <v-card-text v-text="highlight.description" />
+
           </v-card>
         </v-col>
       </v-row>
@@ -18,14 +27,32 @@
   </div>
 </template>
 <script>
+import SectionHeader from "~/components/SectionHeader.vue";
 export default {
+  components: { SectionHeader },
   data: () => ({
     highlights: [
       { title: "UI/UX/CX for Ecommerce", description: "asdgasdgasdfgadsfg" },
-      { title: "Development for Ecommerce", description: "asdgasdgasdfgadsfg" },
-      { title: "Consulting", description: "asdgasdgasdfgadsfg" },
-      { title: "AWS maintenance", description: "asdgasdgasdfgadsfg" },
-      { title: "Corporate training", description: "asdgasdgasdfgadsfg" },
+      {
+        title: "Full-range SEO for eCommerce",
+        description:
+          "We deliver a full-circle eCommerce SEO strategy: from keyword research, website architecture and on-page optimization to content marketing and link building. It’s a comprehensive, granular action plan focused on growing rankings for high-intent keywords."
+      },
+      {
+        title: "We work with all eCommerce platforms",
+        description:
+          "Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix, Squarespace and more – we can work with eCommerce platforms of your choice."
+      },
+      {
+        title: "Evergreen high-quality traffic",
+        description:
+          "Your paid traffic is a faucet that ceases to deliver results as soon as you turn it off. We double down on organic growth that will get you to the top positions  you rightfully deserve, while also adding paid acquisition campaigns to the mix."
+      },
+      {
+        title: "Well-optimized eCommerce content",
+        description:
+          "Content is one of the pillars of SEO for eCommerce websites. From product descriptions to landing pages and blog posts, your website needs to speak to your target audience. We cater to all of your content needs to deliver just that."
+      },
       { title: "Backend hardening", description: "asdgasdgasdfgadsfg" }
     ]
   }),

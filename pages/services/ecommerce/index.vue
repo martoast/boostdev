@@ -11,25 +11,14 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              We use the best platforms around!<br />
+              We help eCommerce companies drive more business.<br />
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
-              vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
-              pellentesque mollis, felis nunc ultrices eros, sed gravida augue
-              augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
-              id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
-              pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
-              ullamcorper mauris at ligula.
+              Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix, Squarespace and more – we can work with eCommerce platforms of your choice.
             </p>
             <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-              dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit
-              risus. Donec vitae sapien ut libero venenatis faucibus. In hac
-              habitasse platea dictumst. Donec quam felis, ultricies nec,
-              pellentesque eu, pretium quis, sem.
+              Our goal is to set you up with an actionable plan on how to increase online sales coming from organic search. This is exactly what will help your store thrive in the long term.
             </p>
 
             <v-btn
@@ -58,39 +47,18 @@
         </v-row>
       </v-container>
     </section>
+    <section>
+      <DemoContact />
+    </section>
+
+    <section>
+      <Features2 />
+    </section>
 
     <section>
       <EcomFeatures />
     </section>
 
-    <section>
-      <v-container>
-        <v-row>
-          <v-col
-            v-for="([icon, number, name], i) in experiences"
-            :key="i"
-            cols="6"
-            md="3"
-          >
-            <div class="text-center">
-              <v-icon
-                size="64"
-                class="mb-3"
-                v-text="icon"
-              />
-              <div
-                class="display-2 font-weight-bold mb-2"
-                v-text="number"
-              />
-              <div
-                class="text-uppercase"
-                v-text="name"
-              />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
     <section>
       <Blog />
     </section>
@@ -98,7 +66,10 @@
 </template>
 <script>
 import Blog from "~/components/sections/EcomBlog.vue";
+import Features2 from "~/components/sections/Features2.vue";
 import EcomFeatures from "~/components/sections/EcomFeatures.vue";
+import EcommerceServices from "~/components/sections/EcommerceServices.vue";
+import DemoContact from "~/components/sections/DemoContact.vue";
 export default {
   head() {
     return {
@@ -119,7 +90,7 @@ export default {
   },
   layout: "ecommerce",
 
-  components: { Blog, EcomFeatures },
+  components: { Blog, EcomFeatures, Features2, DemoContact, EcommerceServices },
 
   data: () => ({
     experiences: [

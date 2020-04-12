@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>lead generation test page</h1>
+    <h1>Lead generation services that fuel your sales pipeline</h1>
   </div>
 </template>
 

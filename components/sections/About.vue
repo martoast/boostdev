@@ -17,7 +17,7 @@
             offset-md="1"
           >
             <h1
-              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
+              :class="[$vuetify.breakpoint.mdAndUp ? 'display-2' : 'headline']"
               class="mb-4"
             >
 

@@ -4,12 +4,15 @@
     <AppBar />
 
     <PageHeader />
+    <LogoSheet />
 
     <v-content>
-      <v-container class="pb-12">
-        <nuxt />
-      </v-container>
-      <DemoContact />
+      <div class="pd-12">
+
+      </div>
+
+      <nuxt />
+
     </v-content>
 
     <Contact />
@@ -20,18 +23,20 @@
 <script>
 import AppBar from "~/components/core/AppBar.vue";
 import Hero from "~/components/sections/Hero.vue";
-import DemoContact from "~/components/sections/DemoContact.vue";
+
 import PageHeader from "~/components/PageHeader.vue";
 import Contact from "~/components/sections/Contact.vue";
+import LogoSheet from "~/components/sections/LogoSheet.vue";
 
 export default {
   components: {
     AppBar,
     Hero,
-    DemoContact,
+
     Footer: () => import("~/components/core/Footer"),
     PageHeader,
-    Contact
+    Contact,
+    LogoSheet
   },
   data() {
     return {
