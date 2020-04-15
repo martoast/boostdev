@@ -101,7 +101,7 @@ export default {
         },
         {
           icon: "mdi-cellphone-link",
-          route: "services/seo/localseo",
+          route: "/services/seo/localseo",
           title: "Local SEO",
           text:
             "Dominate local search and consistently outrank your competition."

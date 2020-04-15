@@ -14,7 +14,7 @@
             cols="12"
           >
             <h1 class="display-1 font-weight-thin mb-4">SEO Content Link Building Services</h1>
-            <h4 class="subheading">With our SEO content writing services, you get content that both people and search engines love.</h4>
+            <h4 class="subheading">Link building services: powered by data & analysis, driven by results</h4>
             <div class="py-2" />
             <v-btn
               class="mr-md-3 my-2"
@@ -50,7 +50,7 @@
       <v-container>
         <div class="py-2" />
         <SectionHeader
-          sub-header="Grow your rankings with Boost SEO content writing services"
+          sub-header="Trusted Link Building Services"
           header="Mastering Organic Growth"
         />
         <v-row>
@@ -66,7 +66,7 @@
             </h2>
 
             <p class="subtitle-1">
-              In this day and age, your brand needs interesting, compelling content to delight and empower your audience. Brands that produce content regularly benefit from constantly growing traffic and organic rankings in search results while staying cost-efficient.
+              We earn you backlinks and coverage you won’t get elsewhere. Credible outlets coupled with outstanding linkable content get your brand to the top positions you rightfully deserve. Just give us the details: URLs, anchor text and preferred industry / niche and we’ll do all the heavy lifting. You get weekly updates on the progress of your campaign and have full control at any point.
             </p>
             <!-- <p class="mb-5">
               We jumpstart the on-site SEO optimization process by running a comprehensive audit of your website: its quality, structure, content and authority. Next, we identify core business keywords you need to rank for and transform these insights into a fully customized action plan, broken down into high- and medium-priority items, milestones and timeframes. We implement it all: from revising the URL structure and fixing technical issues to optimizing content and anything in between.
@@ -148,7 +148,7 @@ export default {
   },
 
   data: () => ({
-    image: require("~/assets/keyword.png")
+    image: require("~/assets/boostlinkbuilding.png")
   }),
 
   computed: {}

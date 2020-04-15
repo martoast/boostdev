@@ -69,24 +69,24 @@ export default {
       features: [
         {
           icon: "mdi-magnify",
-          title: "Technical website audit",
+          title: "Premium PR link building",
           route: "/services/seo/onpage",
           text:
-            "We investigate website speed, navigation, URL structure, XML sitemaps, mobile performance, crawl errors, redirects and much more to build a full picture of your website performance. We recommend actions to resolve errors and eliminate deficiencies."
+            "We earn you first-class placements in top-tier outlets. Exclusive features and mentions of your brand by resources that get millions of readers every month."
         },
         {
           icon: "mdi-math-compass",
           route: "/services/seo/keywords",
-          title: "Keyword research & SEO architecture",
+          title: "Guest post campaigns",
           text:
-            "We conduct detailed keyword research and define core keywords your business should be targeting. We also align these keywords with content assets and pages your website should feature in order to rank for them."
+            "We handpick a robust selection of outlets with the right balance of domain authority and relevance and produce premium content that organically mentions your brand’s unique expertise."
         },
         {
           icon: "mdi-chart-line",
           route: "/services/seo/content",
-          title: "Backlinks audit",
+          title: "White-hat natural placements",
           text:
-            "Quality backlinks have a positive effect on your website’s authority and positions in search. We run a deep backlinks audit to put together your backlink profile and flag low-quality or broken backlinks that threaten your credibility and might result in a penalty from search engines."
+            "We run targeted outreach campaigns and cooperate with our extensive network of editors, journalists and bloggers to promote your content and earn you excellent mentions and backlinks."
         }
       ]
     };

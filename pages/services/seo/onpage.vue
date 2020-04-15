@@ -14,7 +14,7 @@
             cols="12"
           >
             <h1 class="display-1 font-weight-thin mb-4">Onpage SEO Optimization</h1>
-            <h4 class="subheading">Rank higher, faster with Boost SEO</h4>
+            <h4 class="subheading">Get your website found by people and search engines</h4>
             <div class="py-2" />
             <v-btn
               class="mr-md-3 my-2"
@@ -50,7 +50,7 @@
       <v-container>
         <div class="py-2" />
         <SectionHeader
-          sub-header="Grow your rankings with on-page SEO services"
+          sub-header="A comprehensive plan of action tailored to your needs."
           header="Mastering Organic Growth"
         />
         <v-row>
@@ -62,7 +62,7 @@
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              On-page SEO services, explained<br />
+              With our technical SEO audit services, we aim to optimize the behind-the-scenes performance of your website to help you get to the top positions in search.<br />
             </h2>
 
             <p class="subtitle-1">

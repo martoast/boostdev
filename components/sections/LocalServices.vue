@@ -7,7 +7,7 @@
 
       <v-container class="text-center">
         <SectionHeader
-          sub-header="SEO Onpage Services"
+          sub-header="Local SEO Services"
           header="Mastering Organic Growth"
         />
 
@@ -69,24 +69,24 @@ export default {
       features: [
         {
           icon: "mdi-magnify",
-          title: "Technical website audit",
+          title: "Complete local SEO strategy",
           route: "/services/seo/onpage",
           text:
-            "We investigate website speed, navigation, URL structure, XML sitemaps, mobile performance, crawl errors, redirects and much more to build a full picture of your website performance. We recommend actions to resolve errors and eliminate deficiencies."
+            "There’s so much more to local SEO than just listing your company on Google My Business. From locally relevant on-page SEO to neighborhood pages and customer reviews, we put together a comprehensive, actionable strategy for you."
         },
         {
           icon: "mdi-math-compass",
           route: "/services/seo/keywords",
-          title: "Keyword research & SEO architecture",
+          title: "Hyper-personalized user experience",
           text:
-            "We conduct detailed keyword research and define core keywords your business should be targeting. We also align these keywords with content assets and pages your website should feature in order to rank for them."
+            "A cleverly optimized local website speaks to the needs of customers and turns you into local authority. Our optimization process covers everything from the blog and internal linking to NAP info, long-tail optimization and much more."
         },
         {
           icon: "mdi-chart-line",
           route: "/services/seo/content",
-          title: "Backlinks audit",
+          title: "Drive traffic & sales",
           text:
-            "Quality backlinks have a positive effect on your website’s authority and positions in search. We run a deep backlinks audit to put together your backlink profile and flag low-quality or broken backlinks that threaten your credibility and might result in a penalty from search engines."
+            "Whether you run a brick-and-mortar store or a digital business, all that matters at the end of the day is qualified traffic that can translate into sales and happy customers. We show you the exact steps to win customers in your area and build a professional presence in search."
         }
       ]
     };
