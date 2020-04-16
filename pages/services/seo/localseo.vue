@@ -110,6 +110,10 @@
       <LocalVideoSheet />
     </section>
 
+    <section>
+      <Contact />
+    </section>
+
     <!-- <section>
       <SeoBlog />
     </section> -->
@@ -144,7 +148,8 @@ export default {
     LocalServices,
     DemoContact,
     SectionHeader,
-    LocalVideoSheet
+    LocalVideoSheet,
+    Contact: () => import("~/components/sections/Contact")
   },
 
   data: () => ({

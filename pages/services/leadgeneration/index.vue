@@ -5,16 +5,14 @@
         dark
         src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col
-            class="text-center"
-            cols="12"
-          >
-            <h1 class="display-1 font-weight-thin mb-4">Onpage SEO Optimization</h1>
-            <h4 class="subheading">Get your website found by people and search engines</h4>
+        <v-row align="center" justify="center">
+          <v-col class="text-center" cols="12">
+            <h1 class="display-1 font-weight-thin mb-4">
+              Boost Lead Generation Services
+            </h1>
+            <h4 class="subheading">
+              Lead generation services that fuel your sales pipeline
+            </h4>
             <div class="py-2" />
             <v-btn
               class="mr-md-3 my-2"
@@ -39,10 +37,8 @@
               <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
               CALL NOW
             </v-btn>
-
           </v-col>
         </v-row>
-
       </v-parallax>
     </section>
 
@@ -50,49 +46,39 @@
       <v-container>
         <div class="py-2" />
         <SectionHeader
-          sub-header="A comprehensive plan of action tailored to your needs."
+          sub-header="Trusted Link Building Services"
           header="Mastering Organic Growth"
         />
         <v-row>
-          <v-col
-            cols="12"
-            md="6"
-          >
+          <v-col cols="12" md="6">
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              With our technical SEO audit services, we aim to optimize the behind-the-scenes performance of your website to help you get to the top positions in search.<br />
+              Need to Scale Inbound Lead Gen?
             </h2>
 
             <p class="subtitle-1">
-              Every time you want your website to rank on page 1 for a particular keyword, on-page SEO comes into play. On-page SEO analysis entails a mix of activities that reveal your website's current position and authority in search as well as highlight avenues for growth. Dominating the online landscape is a task that requires knowledge, skills and commitment – and it's the job we truly mastered.
+              The foundation of our lead generation services is data predictive
+              analysis driven by data. Our performance is the result of a
+              strategy crafted around your target audience, search engine
+              optimization strategies and your ROI.
             </p>
             <p class="mb-5">
-              We jumpstart the on-site SEO optimization process by running a comprehensive audit of your website: its quality, structure, content and authority. Next, we identify core business keywords you need to rank for and transform these insights into a fully customized action plan, broken down into high- and medium-priority items, milestones and timeframes. We implement it all: from revising the URL structure and fixing technical issues to optimizing content and anything in between.
+              The <strong>Boost Lead Generation Service</strong> is designed to
+              help you generate business from the internet while you pay only
+              for every lead that is generated through our activities. Our Lead
+              generation campaigns are designed to give you value for money
+              while you focus on your core business.
             </p>
 
-            <v-btn
-              outlined
-              color="primary"
-              class="px-5"
-              large
-              to="/contact"
-            >
+            <v-btn outlined color="primary" class="px-5" large to="/contact">
               Contact Us
             </v-btn>
           </v-col>
-          <v-col
-            cols="12"
-            md="5"
-            offset-md="1"
-          >
+          <v-col cols="12" md="5" offset-md="1">
             <v-card class="hidden-sm-and-down">
-              <v-img
-                :src="this.image"
-                height="500"
-              >
-              </v-img>
+              <v-img :src="this.image" height="500"> </v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -100,16 +86,14 @@
     </section>
 
     <section>
-      <OnPageServices />
+      <LeadGenerationServices />
     </section>
     <section>
       <DemoContact />
     </section>
     <section>
-
-      <VideoSheet />
+      <LeadGenerationVideoSheet />
     </section>
-
     <section>
       <Contact />
     </section>
@@ -122,7 +106,7 @@
 <script>
 import SeoFeatures from "~/components/sections/SeoFeatures.vue";
 import SeoBlog from "~/components/sections/SeoBlog.vue";
-import OnPageServices from "~/components/sections/OnPageServices.vue";
+import ContentServices from "~/components/sections/ContentServices.vue";
 import DemoContact from "~/components/sections/DemoContact.vue";
 import SectionHeader from "~/components/SectionHeader.vue";
 import VideoSheet from "~/components/sections/VideoSheet.vue";
@@ -145,15 +129,18 @@ export default {
   components: {
     SeoFeatures,
     SeoBlog,
-    OnPageServices,
+    ContentServices,
     DemoContact,
     SectionHeader,
-    VideoSheet,
-    Contact: () => import("~/components/sections/Contact")
+    LeadGenerationVideoSheet: () =>
+      import("~/components/sections/LeadGenerationVideoSheet"),
+    Contact: () => import("~/components/sections/Contact"),
+    LeadGenerationServices: () =>
+      import("~/components/sections/LeadGenerationServices")
   },
 
   data: () => ({
-    image: require("~/assets/keyword.png")
+    image: require("~/assets/leadgeneration.jpg")
   }),
 
   computed: {}
