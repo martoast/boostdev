@@ -93,7 +93,7 @@ export default {
       { title: "SEO Services", link: "/services/seo" },
       { title: "Web Development", link: "/services/web-development" },
       { title: "E-Commerce", link: "/services/ecommerce" },
-      { title: "Digital Marketing", link: "/services/payperclick" }
+      { title: "Digital Marketing", link: "/services/ppc" }
     ],
     company: [
       { title: "About", link: "/about/" },

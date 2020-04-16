@@ -13,25 +13,32 @@
         >
           <h1 class="display-1 font-weight-thin mb-4">Web Design & Development</h1>
           <h3>Quality design with lighting performance</h3>
+          <div class="pt-6">
+            <v-btn
+              class="mr-md-3 my-2"
+              color="white"
+              large
+              min-width="175"
+              outlined
+              rounded
+              to="/about/"
+            >
+              Learn More
+            </v-btn>
 
-        </v-col>
-      </v-row>
-    </v-parallax>
+            <v-btn
+              class="text--primary my-2"
+              color="white"
+              large
+              min-width="175"
+              rounded
+              href="tel: +1 (619) 888-5258"
+            >
+              <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+              CALL NOW
+            </v-btn>
 
-    <v-parallax
-      height="300"
-      src="https://images-na.ssl-images-amazon.com/images/I/11zGghjmy%2BL._SX355_.jpg"
-    >
-      <v-row
-        align="center"
-        justify="center"
-      >
-        <v-col
-          class="text-center"
-          cols="12"
-        >
-          <h1 class="display-1 font-weight-thin mb-4">Great Websites Command Attention & Get Found</h1>
-          <p>We build user-centric websites increasing the ease of use for visitors to do what it is that brought them there, whether it's learn more about your products, submit an inquiry or make a purchase. We design with purpose with best-in-class SEO and UX optimization.</p>
+          </div>
 
         </v-col>
       </v-row>
