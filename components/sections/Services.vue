@@ -69,7 +69,7 @@ export default {
       },
       {
         title: "Pay per Click",
-        route: "/services/payperclick",
+        route: "/services/ppc",
         src: require("@/assets/enterprice.jpg"),
         flex: 6
       },
