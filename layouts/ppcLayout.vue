@@ -15,7 +15,7 @@
           class="text-center"
           cols="12"
         >
-          <h1 class="display-1 font-weight-thin mb-4">Experts in Paid Advertizing</h1>
+          <h1 class="display-1 font-weight-thin mb-4">ROI-focused PPC Services</h1>
           <p>Build a <strong>Killer</strong> Ad campaing with <strong>Boost</strong> Today! </p>
 
         </v-col>

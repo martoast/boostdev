@@ -92,7 +92,7 @@ export default {
         },
         {
           icon: "mdi-cellphone-link",
-          route: "/services/payperclick",
+          route: "/services/ppc",
           title: "Pay per Click",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
