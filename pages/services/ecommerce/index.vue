@@ -3,10 +3,7 @@
     <section>
       <v-container>
         <v-row>
-          <v-col
-            cols="12"
-            md="6"
-          >
+          <v-col cols="12" md="6">
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -15,27 +12,21 @@
             </h2>
 
             <p class="subtitle-1">
-              Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix, Squarespace and more – we can work with eCommerce platforms of your choice.
+              Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix,
+              Squarespace and more – we can work with eCommerce platforms of
+              your choice.
             </p>
             <p class="mb-5">
-              Our goal is to set you up with an actionable plan on how to increase online sales coming from organic search. This is exactly what will help your store thrive in the long term.
+              Our goal is to set you up with an actionable plan on how to
+              increase online sales coming from organic search. This is exactly
+              what will help your store thrive in the long term.
             </p>
 
-            <v-btn
-              outlined
-              color="primary"
-              class="px-5"
-              large
-              to="/contact"
-            >
+            <v-btn outlined color="primary" class="px-5" large to="/contact">
               Contact Us
             </v-btn>
           </v-col>
-          <v-col
-            cols="12"
-            md="5"
-            offset-md="1"
-          >
+          <v-col cols="12" md="5" offset-md="1">
             <v-card class="hidden-sm-and-down">
               <v-img
                 src="https://www.aalpha.net/wp-content/uploads/2020/03/magento-gif.gif"
@@ -52,11 +43,18 @@
     </section>
 
     <section>
+      <EcommerceServices />
+    </section>
+
+    <!-- <section>
       <Features2 />
+    </section> -->
+    <section>
+      <EcomFeatures />
     </section>
 
     <section>
-      <EcomFeatures />
+      <EcommerceVideoSheet />
     </section>
 
     <section>
@@ -70,6 +68,7 @@ import Features2 from "~/components/sections/Features2.vue";
 import EcomFeatures from "~/components/sections/EcomFeatures.vue";
 import EcommerceServices from "~/components/sections/EcommerceServices.vue";
 import DemoContact from "~/components/sections/DemoContact.vue";
+import EcommerceVideoSheet from "~/components/sections/EcommerceVideoSheet.vue";
 export default {
   head() {
     return {
@@ -90,7 +89,14 @@ export default {
   },
   layout: "ecommerce",
 
-  components: { Blog, EcomFeatures, Features2, DemoContact, EcommerceServices },
+  components: {
+    Blog,
+    EcomFeatures,
+    Features2,
+    DemoContact,
+    EcommerceServices,
+    EcommerceVideoSheet
+  },
 
   data: () => ({
     experiences: [

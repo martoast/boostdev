@@ -1,14 +1,10 @@
 <template>
   <div>
-    <section
-      id="features"
-      class="grey lighten-3"
-    >
-
+    <section id="features" class="grey lighten-3">
       <v-container class="text-center">
         <SectionHeader
-          header="Included with each service"
-          sub-header="What you can expect from us"
+          header="Boost E-commerce Services"
+          sub-header="Industry-leading eCommerce services"
         />
 
         <v-row>
@@ -18,21 +14,11 @@
             cols="12"
             md="4"
           >
-            <v-card
-              class="py-12 px-4"
-              color="grey lighten-5"
-              flat
-            >
+            <v-card class="py-12 px-4" color="grey lighten-5" flat>
               <v-theme-provider dark>
                 <div>
-                  <v-avatar
-                    color="primary"
-                    size="88"
-                  >
-                    <v-icon
-                      large
-                      v-text="icon"
-                    ></v-icon>
+                  <v-avatar color="primary" size="88">
+                    <v-icon large v-text="icon"></v-icon>
                   </v-avatar>
                 </div>
               </v-theme-provider>
@@ -42,11 +28,7 @@
                 v-text="title"
               ></v-card-title>
 
-              <v-card-text
-                class="subtitle-1"
-                v-text="text"
-              >
-              </v-card-text>
+              <v-card-text class="subtitle-1" v-text="text"> </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -54,7 +36,6 @@
 
       <div class="py-12"></div>
     </section>
-
   </div>
 </template>
 <script>
@@ -68,15 +49,15 @@ export default {
       features: [
         {
           icon: "mdi-account-group-outline",
-          title: "Dedicated account manager",
+          title: "Full-range SEO for eCommerce",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            "We deliver a full-circle eCommerce SEO strategy: from keyword research, website architecture and on-page optimization to content marketing and link building. It’s a comprehensive, granular action plan focused on growing rankings for high-intent keywords."
         },
         {
           icon: "mdi-chart-line",
-          title: "Clear and concise reporting",
+          title: "Evergreen high-quality traffic",
           text:
-            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+            "Your paid traffic is a faucet that ceases to deliver results as soon as you turn it off. We double down on organic growth that will get you to the top positions  you rightfully deserve, while also adding paid acquisition campaigns to the mix."
         },
         {
           icon: "mdi-cellphone-link",
