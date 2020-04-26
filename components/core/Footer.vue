@@ -14,7 +14,8 @@
             cols="12"
             md="3"
           >
-            <h3 class="headline mb-3">Boost Media Inc</h3>
+
+            <!-- <h3 class="headline mb-3">Boost Media Inc</h3> -->
             <ul class="body-1 pl-0">
               <li
                 v-for="(c, i) in company"
@@ -87,7 +88,11 @@
 </template>
 
 <script>
+import FooterLogo from "~/components/sections/FooterLogo.vue";
 export default {
+  components: {
+    FooterLogo
+  },
   data: () => ({
     categories: [
       { title: "SEO Services", link: "/services/seo" },

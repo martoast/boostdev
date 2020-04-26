@@ -27,7 +27,7 @@
 
       <!-- <Demo /> -->
     </v-content>
-    <Contact />
+    <!-- <Contact /> -->
 
     <Footer />
   </v-app>

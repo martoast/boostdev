@@ -32,14 +32,18 @@ export default {
   components: { SectionHeader },
   data: () => ({
     highlights: [
-      { title: "UI/UX/CX for Ecommerce", description: "asdgasdgasdfgadsfg" },
       {
-        title: "Full-range SEO for eCommerce",
+        title: "Mobile Shopping Optimized",
+        description:
+          "Over the years web development for ecommerce has evolved alot since the introduction of mobile shopping. We team of experts build your store using the lastest technology to ensure you are mobile shopping optimized."
+      },
+      {
+        title: "Full-range SEO for Ecommerce",
         description:
           "We deliver a full-circle eCommerce SEO strategy: from keyword research, website architecture and on-page optimization to content marketing and link building. It’s a comprehensive, granular action plan focused on growing rankings for high-intent keywords."
       },
       {
-        title: "We work with all eCommerce platforms",
+        title: "All Ecommerce platforms",
         description:
           "Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix, Squarespace and more – we can work with eCommerce platforms of your choice."
       },
@@ -49,11 +53,15 @@ export default {
           "Your paid traffic is a faucet that ceases to deliver results as soon as you turn it off. We double down on organic growth that will get you to the top positions  you rightfully deserve, while also adding paid acquisition campaigns to the mix."
       },
       {
-        title: "Well-optimized eCommerce content",
+        title: "Well-optimized Ecommerce content",
         description:
           "Content is one of the pillars of SEO for eCommerce websites. From product descriptions to landing pages and blog posts, your website needs to speak to your target audience. We cater to all of your content needs to deliver just that."
       },
-      { title: "Backend hardening", description: "asdgasdgasdfgadsfg" }
+      {
+        title: "Backend hardening",
+        description:
+          "Our team of experts have experience building ecommerce stores of all shapes and sizes. We will take care of your backend security, so you can get back to running your business."
+      }
     ]
   }),
   jsonld() {

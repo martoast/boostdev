@@ -3,12 +3,15 @@
     <section>
       <v-container>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              We help eCommerce companies drive more business.<br />
+              We help Ecommerce companies drive more business.<br />
             </h2>
 
             <p class="subtitle-1">
@@ -22,11 +25,21 @@
               what will help your store thrive in the long term.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large to="/contact">
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+              to="/contact"
+            >
               Contact Us
             </v-btn>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <v-card class="hidden-sm-and-down">
               <v-img
                 src="https://www.aalpha.net/wp-content/uploads/2020/03/magento-gif.gif"

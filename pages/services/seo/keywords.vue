@@ -109,6 +109,9 @@
 
       <VideoSheet />
     </section>
+    <section>
+      <Contact />
+    </section>
 
     <!-- <section>
       <SeoBlog />
@@ -145,7 +148,8 @@ export default {
     KeyWordServices,
     DemoContact,
     SectionHeader,
-    VideoSheet
+    VideoSheet,
+    Contact: () => import("~/components/sections/Contact")
   },
 
   data: () => ({

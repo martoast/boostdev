@@ -1,13 +1,21 @@
 <template>
   <div>
+    <SectionHeader
+      sub-header="Why Our E-commerce Services?"
+      header="Mastering Organic Growth"
+    />
     <section class="grey lighten-3">
       <v-container>
-        <SectionHeader
-          sub-header="Why Our E-commerce Services?"
-          header="Mastering Organic Growth"
-        />
-        <v-row align="center" justify="space-between">
-          <v-col cols="12" md="5" offset-xl="1">
+
+        <v-row
+          align="center"
+          justify="space-between"
+        >
+          <v-col
+            cols="12"
+            md="5"
+            offset-xl="1"
+          >
             <div class="ma-12">
               <v-row justify="center">
                 <h2 class="mb-4 headline">
@@ -33,7 +41,10 @@
             </div>
           </v-col>
 
-          <v-col cols="12" md="5">
+          <v-col
+            cols="12"
+            md="5"
+          >
             <div align="center">
               <v-container>
                 <iframe

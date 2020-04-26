@@ -27,12 +27,13 @@
               <a :href="card.link">
                 <v-card
                   class="mx-auto"
+                  height="350"
                   :elevation="hover ? 16 : 2"
                 >
                   <v-img
                     class="white--text align-end"
-                    height="200px"
                     :src="card.src"
+                    height="150"
                   >
 
                   </v-img>
@@ -44,7 +45,7 @@
                   ></v-card-subtitle>
 
                   <v-card-text class="text--primary">
-                    <div>{{card.content}}</div>
+                    <div class="hidden-md-and-down">{{card.content}}</div>
 
                   </v-card-text>
 
