@@ -3,10 +3,10 @@
     id="contact"
     class="py-5"
   >
-    <SectionHeader
+    <!-- <SectionHeader
       header="Work with Boost"
       sub-header="Contact Us"
-    />
+    /> -->
 
     <v-container>
       <v-row>
@@ -14,94 +14,7 @@
           xs12
           md6
         >
-          <v-form>
-            <v-container pa-0>
-              <v-row>
-                <v-col
-                  cols="12"
-                  class="mb-4 grey--text"
-                >
-                  Call or submit our online form to request an estimate or for general questions about U.S. Certified Contractors and our services. We look forward to serving you!
-                </v-col>
-                <v-col cols="12">
-                  <v-select
-                    cols="12"
-                    v-model="select"
-                    :items="items"
-                    :rules="[v => !!v || 'Item is required']"
-                    label="Item"
-                    required
-                    outlined
-                  ></v-select>
-                </v-col>
-
-                <v-col
-                  cols="12"
-                  md="6"
-                >
-                  <v-text-field
-                    outlined
-                    label="First Name*"
-                  />
-                </v-col>
-
-                <v-col
-                  cols="12"
-                  md="6"
-                >
-                  <v-text-field
-                    outlined
-                    label="Last Name*"
-                  />
-                </v-col>
-
-                <v-col
-                  cols="12"
-                  md="6"
-                >
-                  <v-text-field
-                    outlined
-                    label="Your Email*"
-                  />
-                </v-col>
-
-                <v-col
-                  cols="12"
-                  md="6"
-                >
-                  <v-text-field
-                    label="Your Phone Number*"
-                    outlined
-                  />
-                </v-col>
-
-                <v-col cols="12">
-                  <v-text-field
-                    label="Subject"
-                    outlined
-                  />
-                </v-col>
-
-                <v-col cols="12">
-                  <v-textarea
-                    label="Message"
-                    outlined
-                  />
-                </v-col>
-
-                <v-col cols="12">
-                  <v-btn
-                    :block="$vuetify.breakpoint.xsOnly"
-                    color="primary"
-                    depressed
-                    x-large
-                  >
-                    Send Message
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-form>
+          <Netlify />
         </v-col>
 
         <v-col
@@ -163,6 +76,7 @@
 
 <script>
 import SectionHeader from "~/components/SectionHeader.vue";
+import Netlify from "~/components/sections/netlify-form.vue";
 export default {
   data() {
     return {
@@ -179,7 +93,8 @@ export default {
   },
 
   components: {
-    SectionHeader
+    SectionHeader,
+    Netlify
   }
 };
 </script>

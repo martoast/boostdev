@@ -27,6 +27,7 @@
 
       <!-- <Demo /> -->
     </v-content>
+    <Contact />
 
     <Footer />
   </v-app>
@@ -34,11 +35,13 @@
 
 <script>
 import AppBar2 from "~/components/core/AppBar2.vue";
+import Contact from "~/components/sections/Contact.vue";
 
 export default {
   components: {
     AppBar2,
-    Footer: () => import("~/components/core/Footer")
+    Footer: () => import("~/components/core/Footer"),
+    Contact
   },
   data() {
     return {

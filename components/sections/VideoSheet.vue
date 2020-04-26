@@ -20,7 +20,7 @@
             <div class="ma-12">
               <v-row justify="center">
                 <h2 class="mb-4 headline">
-                  Our SEO Keyword Research Process<br />
+                  Our SEO Strategy is based on data and the latest technolgy<br />
                 </h2>
 
                 <p class="subtitle-1">

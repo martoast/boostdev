@@ -70,13 +70,13 @@ export default {
           icon: "mdi-account-group-outline",
           title: "Dedicated account manager for each client",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            " We recognize that as a business owner you do not have time to study the best Digital marketing strategies for your businesss. That is why we assing a dedicated expert to guide you through every step of the way to your online success."
         },
         {
           icon: "mdi-chart-line",
           title: "Clear and concise reporting",
           text:
-            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Every month you With our live link technology you can see latest development changes as they are submited."
         },
         {
           icon: "mdi-cellphone-link",

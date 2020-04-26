@@ -20,12 +20,15 @@
           color="transparent"
           flat
         >
-          <SectionHeader subHeader="Work with Boost." />
+          <SectionHeader
+            header="Work with Boost."
+            subHeader="Tell us about your project, and our industry experts will share ideas and recommendations for how to use Digital Marketing to make it successful!"
+          />
           <v-row>
             <v-col cols="12">
               <div>
                 <v-text-field
-                  label="Nombre*"
+                  label="Name*"
                   for="name"
                   type="text"
                   name="name"
@@ -52,7 +55,7 @@
             <v-col cols="12">
               <div>
                 <v-text-field
-                  label="Telefono*"
+                  label="Phone #*"
                   for="phone"
                   name="phone"
                   required
@@ -63,8 +66,8 @@
             </v-col>
             <v-col cols="12">
               <v-select
-                :items="['Busco informacion General.', 'Me interesa formar parte de Peninsula.', ]"
-                label="Razón por contactar*"
+                :items="['SEO', 'Ecommerce','Lead-Generation','Developoment','Payperclick','Facebook Marketing' ]"
+                label="What are you looking for*"
                 required
                 outlined
               ></v-select>
@@ -73,7 +76,7 @@
             <v-col cols="12">
               <div>
                 <v-textarea
-                  label="Mensaje*"
+                  label="Your Message*"
                   for="message"
                   name="message"
                   required

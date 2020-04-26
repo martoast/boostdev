@@ -5,8 +5,14 @@
         dark
         src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       >
-        <v-row align="center" justify="center">
-          <v-col class="text-center" cols="12">
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col
+            class="text-center"
+            cols="12"
+          >
             <h1 class="display-1 font-weight-thin mb-4">
               Boost Lead Generation Services
             </h1>
@@ -50,7 +56,10 @@
           header="Mastering Organic Growth"
         />
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -72,13 +81,26 @@
               while you focus on your core business.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large to="/contact">
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+              to="/contact"
+            >
               Contact Us
             </v-btn>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <v-card class="hidden-sm-and-down">
-              <v-img :src="this.image" height="500"> </v-img>
+              <v-img
+                :src="this.image"
+                height="500"
+              > </v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -92,7 +114,7 @@
       <DemoContact />
     </section>
     <section>
-      <LeadGenerationVideoSheet />
+      <VideoSheet />
     </section>
     <section>
       <Contact />
@@ -132,8 +154,7 @@ export default {
     ContentServices,
     DemoContact,
     SectionHeader,
-    LeadGenerationVideoSheet: () =>
-      import("~/components/sections/LeadGenerationVideoSheet"),
+    VideoSheet: () => import("~/components/sections/VideoSheet"),
     Contact: () => import("~/components/sections/Contact"),
     LeadGenerationServices: () =>
       import("~/components/sections/LeadGenerationServices")

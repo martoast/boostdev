@@ -49,6 +49,9 @@
       </v-container>
     </section>
     <section>
+      <VideoSheet />
+    </section>
+    <section>
       <SeoServices />
     </section>
 
@@ -61,6 +64,7 @@
 import SeoFeatures from "~/components/sections/SeoFeatures.vue";
 import SeoBlog from "~/components/sections/SeoBlog.vue";
 import SeoServices from "~/components/sections/SeoServices.vue";
+import VideoSheet from "~/components/sections/VideoSheet.vue";
 export default {
   head() {
     return {
@@ -77,7 +81,7 @@ export default {
 
   layout: "seoLayout",
 
-  components: { SeoFeatures, SeoBlog, SeoServices },
+  components: { SeoFeatures, SeoBlog, SeoServices, VideoSheet },
 
   data: () => ({}),
 
