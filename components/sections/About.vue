@@ -17,7 +17,7 @@
             offset-md="1"
           >
             <h1
-              :class="[$vuetify.breakpoint.mdAndUp ? 'display-2' : 'headline']"
+              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
 
@@ -25,7 +25,7 @@
 
             </h1>
 
-            <p class="display-1 font-weight-light">
+            <p class="headline font-weight-light">
               Boost Media is a full-service Internet marketing and SEO company offering innovative web marketing solutions to mid to large size companies across the globe. As a leader in SEO, web design, ecommerce, website conversion, and Internet marketing services,
               our firm prides ourselves on driving traffic, converting visitors, and measuring effectiveness to ultimately deliver real results for our clients.
             </p>

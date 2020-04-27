@@ -102,9 +102,7 @@
     <section>
       <LocalServices />
     </section>
-    <section>
-      <Contact />
-    </section>
+
     <section>
 
       <LocalVideoSheet />
