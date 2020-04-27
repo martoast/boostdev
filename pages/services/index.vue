@@ -70,42 +70,42 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-account-group-outline",
+          icon: "mdi-google",
           title: "SEO services",
           route: "/services/seo",
           text:
             "Our proven, repeatable SEO optimization process results in a strong and meaningful action plan to land your website high in organic search results."
         },
         {
-          icon: "mdi-chart-line",
+          icon: "mdi-cellphone-link",
           route: "/services/web-development/",
           title: "Web Development",
           text:
             "While other agencies depend on fixed Website builders and templates that are a pain to customize, at Boost we work with the latest in web development technology to bring our clients the designs that they want to see!"
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-account-multiple-outline",
           route: "/services/leadgeneration",
           title: "Lead Generation",
           text:
             "The foundation of our lead generation services is data predictive analysis driven by data. Our performance is the result of a strategy crafted around your target audience, search engine optimization strategies and your ROI."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-cash",
           route: "/services/ppc",
           title: "Pay per Click",
           text:
             "We help you capture direct, qualified traffic from Google Search Network with well-optimized ads that stand out in search engine results pages."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-cart-outline",
           route: "/services/ecommerce",
           title: "E-commerce",
           text:
             "Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix,Squarespace and more – we can work with eCommerce platforms ofyour choice."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-code-tags",
           route: "/services/seo",
           title: "Enterprice Software",
           text:

@@ -70,7 +70,7 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-account-group-outline",
+          icon: "mdi-code-tags",
           title: "On-page Optimization",
           route: "/services/seo/onpage",
           text: "Boost traffic and grow organic rankings."
@@ -82,13 +82,13 @@ export default {
           text: "The very foundation of your digital marketing strategy."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-format-text",
           route: "/services/seo/content",
           title: "SEO Content Writing",
           text: "Compelling, well-optimized content."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-link-variant",
           route: "/services/seo/linkbuilding",
           title: "Link Building & PR",
           text: "Link building powered by a 12-point quality checklist."
@@ -100,7 +100,7 @@ export default {
           text: "Optimize the performance of your website."
         },
         {
-          icon: "mdi-cellphone-link",
+          icon: "mdi-google-maps",
           route: "/services/seo/localseo",
           title: "Local SEO",
           text:

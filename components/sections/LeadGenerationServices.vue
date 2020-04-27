@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section id="features" class="grey lighten-3 pt-8">
+    <section
+      id="features"
+      class="grey lighten-3 pt-8"
+    >
       <v-container class="text-center">
         <SectionHeader
           sub-header="SEO Onpage Services"
@@ -14,11 +17,21 @@
             cols="12"
             md="4"
           >
-            <v-card class="py-8 px-4" color="grey lighten-5" flat>
+            <v-card
+              class="py-8 px-4"
+              color="grey lighten-5"
+              flat
+            >
               <v-theme-provider dark>
                 <div>
-                  <v-avatar color="primary" size="88">
-                    <v-icon large v-text="icon"></v-icon>
+                  <v-avatar
+                    color="primary"
+                    size="88"
+                  >
+                    <v-icon
+                      large
+                      v-text="icon"
+                    ></v-icon>
                   </v-avatar>
                 </div>
               </v-theme-provider>
@@ -28,7 +41,10 @@
                 v-text="title"
               ></v-card-title>
 
-              <v-card-text class="subtitle-1" v-text="text"> </v-card-text>
+              <v-card-text
+                class="subtitle-1"
+                v-text="text"
+              > </v-card-text>
               <v-btn to="/contact">Talk to an Expert</v-btn>
             </v-card>
           </v-col>
@@ -48,21 +64,21 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-magnify",
+          icon: "mdi-layers",
           title: "Lead generation campaigns",
           route: "/services/leadgeneration",
           text:
             "Boost will Setup a lead generation campaign on your behalf after understanding your complete business model."
         },
         {
-          icon: "mdi-math-compass",
+          icon: "mdi-filter-outline",
           route: "/services/web-development",
           title: "Streamline Sales Funnel",
           text:
             "The traffic that is generated from your campaign will land on the landing pages that are designed by our dedicated developers and designers."
         },
         {
-          icon: "mdi-chart-line",
+          icon: "mdi-rocket",
           route: "/services/seo",
           title: "SEO Ranking",
           text:
