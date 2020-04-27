@@ -78,7 +78,7 @@ export default {
         {
           icon: "mdi-chart-line",
           route: "/services/seo/keywords",
-          title: "Targeted Keyword Research",
+          title: "Keyword Research",
           text: "The very foundation of your digital marketing strategy."
         },
         {
@@ -90,7 +90,7 @@ export default {
         {
           icon: "mdi-cellphone-link",
           route: "/services/seo/linkbuilding",
-          title: "Trusted Link Building & PR",
+          title: "Link Building & PR",
           text: "Link building powered by a 12-point quality checklist."
         },
         {

@@ -68,6 +68,8 @@
               <v-select
                 :items="['SEO', 'Ecommerce','Lead-Generation','Developoment','Payperclick','Facebook Marketing' ]"
                 label="What are you looking for*"
+                for="looking4"
+                name="lookining4"
                 required
                 outlined
               ></v-select>
