@@ -68,13 +68,13 @@ export default {
       features: [
         {
           icon: "mdi-account-group-outline",
-          title: "Dedicated account manager for each client",
+          title: "Dedicated account expert",
           text:
             "We recognize that as a business owner you do not have time to study the best Digital marketing strategies for your businesss. That is why we assing a dedicated expert to guide you through every step of the way to your online success."
         },
         {
           icon: "mdi-chart-line",
-          title: "Clear and concise reporting",
+          title: "Clear reporting",
           text:
             "Every month we provide you with easy to understand reporting on the status of the strategy we are exhecuting. You will know exactly what has been worked on and how it has impacted your online precense."
         },
