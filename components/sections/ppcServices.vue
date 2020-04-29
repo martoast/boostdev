@@ -84,7 +84,7 @@ export default {
         {
           icon: "mdi-chart-line",
           route: "/services/seo/content",
-          title: "Google Remarketing Services",
+          title: "Google Remarketing",
           text:
             "Intelligent retargeting keeps your brand on top of your customers’ minds and boosts ROI of your PPC campaign. We help you with the right setup and budget distribution."
         }

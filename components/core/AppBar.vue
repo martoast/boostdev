@@ -65,6 +65,7 @@
             v-for="item in Menuitems"
             :key="item.title"
             link
+            :to="item.to"
           >
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -107,7 +108,7 @@ export default {
       {
         title: "Paid Advertizing",
         icon: "dashboard",
-        to: "/services/payperclick/"
+        to: "/services/ppc/"
       },
       {
         title: "Social Media",

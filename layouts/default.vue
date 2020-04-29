@@ -4,20 +4,15 @@
     <AppBar />
     <Hero />
     <DemoContact2 />
+
     <v-content>
-
-      <div class="pb-12">
-        <nuxt />
-      </div>
-
-      <div>
-
-      </div>
-      <!-- <Testimonials /> -->
-
-      <!-- <DemoContact /> -->
+      <nuxt />
 
     </v-content>
+
+    <!-- <Testimonials /> -->
+
+    <!-- <DemoContact /> -->
 
     <Footer />
   </v-app>

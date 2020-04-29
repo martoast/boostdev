@@ -65,19 +65,19 @@ export default {
       features: [
         {
           icon: "mdi-account-group-outline",
-          title: "Full-range SEO for eCommerce",
+          title: "SEO for eCommerce",
           text:
             "We deliver a full-circle eCommerce SEO strategy: from keyword research, website architecture and on-page optimization to content marketing and link building. It’s a comprehensive, granular action plan focused on growing rankings for high-intent keywords."
         },
         {
           icon: "mdi-chart-line",
-          title: "high-quality traffic",
+          title: "High-quality traffic",
           text:
             "Your paid traffic is a faucet that ceases to deliver results as soon as you turn it off. We double down on organic growth that will get you to the top positions  you rightfully deserve, while also adding paid acquisition campaigns to the mix."
         },
         {
           icon: "mdi-cellphone-link",
-          title: "optimized eCommerce content",
+          title: "eCommerce content",
           text:
             "Content is one of the pillars of SEO for eCommerce websites. From product descriptions to landing pages and blog posts, your website needs to speak to your target audience. We cater to all of your content needs to deliver just that."
         }

@@ -69,7 +69,7 @@ export default {
       features: [
         {
           icon: "mdi-magnify",
-          title: "Technical website audit",
+          title: "Website audit",
           route: "/services/seo/onpage",
           text:
             "We investigate website speed, navigation, URL structure, XML sitemaps, mobile performance, crawl errors, redirects and much more to build a full picture of your website performance. We recommend actions to resolve errors and eliminate deficiencies."
@@ -77,7 +77,7 @@ export default {
         {
           icon: "mdi-math-compass",
           route: "/services/seo/keywords",
-          title: "Keyword research & SEO architecture",
+          title: "Keyword research",
           text:
             "We conduct detailed keyword research and define core keywords your business should be targeting. We also align these keywords with content assets and pages your website should feature in order to rank for them."
         },

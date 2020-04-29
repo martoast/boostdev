@@ -69,7 +69,7 @@ export default {
       features: [
         {
           icon: "mdi-magnify",
-          title: "Complete local SEO strategy",
+          title: "Local SEO strategy",
           route: "/services/seo/onpage",
           text:
             "There’s so much more to local SEO than just listing your company on Google My Business. From locally relevant on-page SEO to neighborhood pages and customer reviews, we put together a comprehensive, actionable strategy for you."

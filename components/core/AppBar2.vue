@@ -47,6 +47,7 @@
         temporary
         fixed
         src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+        light
       >
         <v-list>
           <v-list-item>
@@ -65,10 +66,13 @@
             v-for="item in Menuitems"
             :key="item.title"
             link
+            :to="item.to"
           >
+
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
+
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -107,7 +111,7 @@ export default {
       {
         title: "Paid Advertizing",
         icon: "dashboard",
-        to: "/services/payperclick/"
+        to: "/services/ppc/"
       },
       {
         title: "Social Media",

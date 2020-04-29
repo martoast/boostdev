@@ -69,7 +69,7 @@ export default {
       features: [
         {
           icon: "mdi-magnify",
-          title: "Boost organic traffic and growth",
+          title: "organic traffic growth",
           route: "/services/seo/onpage",
           text:
             "Brands that produce content regularly benefit from constantly growing traffic and organic rankings in search results while staying cost-efficient."
@@ -77,14 +77,14 @@ export default {
         {
           icon: "mdi-math-compass",
           route: "/services/seo/keywords",
-          title: "An exciting avenue for growth",
+          title: "Avenue for growth",
           text:
             "According to DemandMetric research, content generates 3x more leads than traditional marketing but costs 62% less. Traditional advertising isn’t even close."
         },
         {
           icon: "mdi-chart-line",
           route: "/services/seo/content",
-          title: "Keep up with the industry's trends",
+          title: "Stay ahead of the Competiotion",
           text:
             "According to CMI, 93% of B2B marketers rely on content, rather than paid acquisition, to build trust with their audience, engage, sell and stay on top of their customers’ minds."
         }
