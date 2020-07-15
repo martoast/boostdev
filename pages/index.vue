@@ -14,13 +14,18 @@
 
       <services />
       <div>
-        <SectionHeader
-          header="Boost Team"
-          sub-header="Meet our Team"
-          text="At Boost we have built a strong core team of experts ready to help your business take full advantage of digital verticles."
-        />
-        <TeamItemGroup />
+        <SectionHeader sub-header="Contact Us" />
       </div>
+      <!--
+          <div
+        >
+          <SectionHeader
+            header="Boost Team"
+            sub-header="Meet our Team"
+            text="At Boost we have built a strong core team of experts ready to help your business take full advantage of digital verticles."
+          />
+          <TeamItemGroup />
+      </div> -->
 
       <!-- <features /> -->
 
