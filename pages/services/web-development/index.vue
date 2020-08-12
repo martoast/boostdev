@@ -18,11 +18,8 @@
               We build user-centric websites increasing the ease of use for visitors to do what it is that brought them there, whether it's learn more about your products, submit an inquiry or make a purchase. We design with purpose with best-in-class SEO and UX optimization.
             </p>
             <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-              dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit
-              risus. Donec vitae sapien ut libero venenatis faucibus. In hac
-              habitasse platea dictumst. Donec quam felis, ultricies nec,
-              pellentesque eu, pretium quis, sem.
+              Custom web development offers options for businesses who seek to provide a flexible, consistent experience for users across platforms.
+              Leveraging new approaches to web development including progressive web apps, we bring front-end, back-end and architecture ability together to deliver on your business need and maximize delivery speed.
             </p>
 
             <v-btn
@@ -75,7 +72,7 @@
       </v-container>
     </section>
 
-    <section>
+    <!-- <section>
       <v-container>
         <v-row>
           <v-col
@@ -97,7 +94,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </section>
+    </section> -->
 
     <section>
       <v-container>
@@ -127,9 +124,9 @@
         </v-row>
       </v-container>
     </section>
-    <section>
+    <!-- <section>
       <WebDevBlog />
-    </section>
+    </section> -->
   </div>
 </template>
 <script>

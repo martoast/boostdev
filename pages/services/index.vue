@@ -103,13 +103,6 @@ export default {
           title: "E-commerce",
           text:
             "Shopify, WordPress, BigCommerce, Magento, WooCommerce, Wix,Squarespace and more – we can work with eCommerce platforms ofyour choice."
-        },
-        {
-          icon: "mdi-code-tags",
-          route: "/services/seo",
-          title: "Enterprice Software",
-          text:
-            "With our SEO services, you can turn on the power of search to maximize your inbound lead gen and scale your revenue and brand to where it belong."
         }
       ]
     };
